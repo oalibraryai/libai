@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets — NEVER commit API keys
+.env.local
+secrets.json
+config.secret.js
+
+# HF Space data (local dev only)
+faiss_index/
+data/
+analytics.db
+*.db
+
+# Build outputs
+dist/
+build/
