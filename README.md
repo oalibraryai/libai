@@ -93,7 +93,7 @@ libbee/
 
 ## 🏛️ Used By
 
-- University Library, UAE *(original deployment)*
+- Khalifa University Library, UAE *(original deployment)*
 - *Your library here — submit a PR!*
 
 ---
