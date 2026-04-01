@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="config.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Ask LibBee</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ku-gold:#C8A951;--ku-dark:#1A1A2E;--primary-color:#003366;--t:#0EA5E9;--bg:#F0F4F8;--txt:#1a1a2e;--mu:#6b7280;--br:#d1d5db;--radius:14px}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--txt);height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+header{background:var(--primary-color);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 12px rgba(0,51,102,.4);flex-shrink:0}
+.hdr-logo{width:42px;height:42px;background:transparent;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hdr-text{flex:1}.hdr-text h1{font-size:1rem;font-weight:700}.hdr-text p{font-size:.7rem;opacity:.8;margin-top:1px}
+.hdr-acct{padding:5px 12px;background:var(--ku-gold);border:none;border-radius:20px;color:var(--ku-dark);font-size:.72rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.model-switcher{display:flex;gap:4px;background:rgba(255,255,255,.12);padding:3px 4px;border-radius:20px;flex-shrink:0}
+.model-opt{padding:4px 10px;border-radius:16px;font-size:.68rem;font-weight:700;cursor:pointer;border:none;transition:all .25s;white-space:nowrap}
+.model-opt.active-claude{background:#D97706;color:#fff;box-shadow:0 1px 6px rgba(217,119,6,.4)}
+.model-opt.active-gpt{background:#10A37F;color:#fff;box-shadow:0 1px 6px rgba(16,163,127,.4)}
+.model-opt:not([class*="active-"]){background:transparent;color:rgba(255,255,255,.6)}
+.model-opt:not([class*="active-"]):hover{color:#fff;background:rgba(255,255,255,.1)}
+.model-badge{display:inline-flex;font-size:.66rem;padding:2px 8px;border-radius:10px;margin-left:6px;font-weight:600;vertical-align:middle}
+.model-badge.claude-badge{color:#D97706;background:#FEF3C7}
+.model-badge.gpt-badge{color:#10A37F;background:#D1FAE5}
+.tabs{display:flex;background:#fff;border-bottom:2px solid var(--br);flex-shrink:0;overflow-x:auto}.tabs::-webkit-scrollbar{display:none}
+.tab{padding:9px 14px;font-size:.76rem;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;color:var(--mu);transition:all .2s;flex-shrink:0}
+.tab.active{color:var(--primary-color);border-bottom-color:var(--ku-gold)}
+.panels{flex:1;overflow:hidden;display:flex;flex-direction:column}
+.panel{display:none;flex:1;flex-direction:column;overflow:hidden}.panel.active{display:flex}
+.msgs{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.msg{display:flex;gap:8px;align-items:flex-start;max-width:90%}.msg.user{align-self:flex-end;flex-direction:row-reverse}
+.av{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.msg.bot .av{background:var(--primary-color);color:#fff}.msg.user .av{background:var(--ku-gold);color:var(--ku-dark)}
+.bub{padding:9px 13px;border-radius:16px;font-size:.86rem;line-height:1.6}
+.msg.bot .bub{background:#fff;border:1px solid var(--br);border-top-left-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.msg.user .bub{background:var(--primary-color);color:#fff;border-top-right-radius:4px}
+.typing{display:flex;gap:4px;padding:4px 0;align-items:center}.typing span{width:7px;height:7px;background:var(--ku-gold);border-radius:50%;animation:bounce 1.2s infinite;flex-shrink:0}
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+.status-text{font-size:.78rem;color:var(--mu);margin-left:8px;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:none}}
+@keyframes bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-7px)}}
+.followups{display:flex;flex-wrap:wrap;gap:5px;padding:2px 12px 8px 50px}
+.fq{padding:4px 10px;border-radius:20px;font-size:.72rem;border:1.5px solid var(--primary-color);color:var(--primary-color);cursor:pointer;background:#fff;transition:all .2s}
+.fq:hover{background:var(--primary-color);color:#fff}
+/* Search recovery banner — shown after general answers */
+.search-recovery{margin:4px 12px 8px 50px;padding:10px 14px;background:linear-gradient(135deg,#eff6ff,#f5f3ff);border-radius:12px;border:1.5px solid #c4b5fd;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.search-recovery-text{font-size:.78rem;color:#4c1d95;font-weight:600}
+.search-recovery-btn{padding:6px 14px;background:var(--primary-color);color:#fff;border:none;border-radius:9px;font-size:.76rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.search-recovery-btn:hover{background:#004488;transform:translateY(-1px)}
+.cin{padding:10px 12px;background:#fff;border-top:1px solid var(--br);display:flex;gap:7px;align-items:center}
+.cin input{flex:1;padding:9px 13px;border:2px solid var(--br);border-radius:24px;font-size:.86rem;outline:none;min-width:0}
+.cin input:focus{border-color:var(--primary-color)}
+.send{width:38px;height:38px;border-radius:50%;background:var(--primary-color);color:#fff;border:none;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.clr{padding:5px 9px;background:var(--bg);border:1.5px solid var(--br);border-radius:16px;font-size:.7rem;color:var(--mu);cursor:pointer;white-space:nowrap;flex-shrink:0}
+.chips{display:flex;gap:6px;flex-wrap:wrap;padding:8px 12px 4px}
+.chip{padding:5px 11px;border-radius:20px;font-size:.74rem;border:1.5px solid var(--primary-color);color:var(--primary-color);cursor:pointer;background:#fff;transition:all .2s;white-space:nowrap}
+.chip:hover{background:var(--primary-color);color:#fff}
+.scard{background:#fff;border-radius:12px;padding:14px;border:1px solid var(--br);box-shadow:0 2px 8px rgba(0,51,102,.08);width:100%}
+.scard-title{font-weight:700;font-size:.86rem;color:var(--primary-color);margin-bottom:4px}
+.bool-str{font-family:monospace;background:var(--ku-dark);color:var(--ku-gold);padding:6px 10px;border-radius:8px;font-size:.76rem;margin:6px 0;word-break:break-all}
+.slinks{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.slink{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;text-decoration:none;font-size:.82rem;font-weight:600;transition:all .2s}
+.slink:hover{opacity:.85;transform:translateX(2px)}
+.slink.all{background:var(--primary-color);color:#fff}
+.slink.art{background:#fef3c7;color:#92400e;border:1px solid #fde68a}
+.slink.bk{background:#ede9fe;color:var(--primary-color);border:1px solid #c4b5fd}
+.slink.ai{background:linear-gradient(135deg,var(--ku-gold),var(--primary-color));color:#fff}
+/* AI TOOLS PANEL */
+.ai-panel{margin-top:10px;padding:12px;background:linear-gradient(135deg,#f0f4ff,#faf5ff);border-radius:12px;border:1px solid #c4b5fd}
+.ai-panel-title{font-size:.78rem;font-weight:800;color:#5b21b6;margin-bottom:2px;display:flex;align-items:center;gap:5px}
+.ai-panel-note{font-size:.68rem;color:var(--mu);margin-bottom:8px}
+.ai-tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.ai-tool-btn{display:flex;align-items:center;gap:7px;padding:7px 10px;border-radius:9px;text-decoration:none;font-size:.75rem;font-weight:700;transition:all .2s;border:1.5px solid transparent}
+.ai-tool-btn:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.ai-tool-btn .ai-tool-icon{font-size:1rem;flex-shrink:0}
+.ai-tool-btn .ai-tool-info{display:flex;flex-direction:column;min-width:0}
+.ai-tool-btn .ai-tool-name{font-size:.74rem;font-weight:700;white-space:nowrap}
+.ai-tool-btn .ai-tool-note{font-size:.62rem;font-weight:400;opacity:.8;white-space:nowrap}
+.ai-tool-btn.leapspace{background:#fff7ed;color:#9a3412;border-color:#fed7aa}
+.ai-tool-btn.scopus{background:#eff6ff;color:#1e40af;border-color:#bfdbfe}
+.ai-tool-btn.primoai{background:linear-gradient(135deg,#fef9c3,#ede9fe);color:#5b21b6;border-color:#c4b5fd}
+.ai-tool-btn.semscholar{background:#f0fdf4;color:#14532d;border-color:#bbf7d0}
+.ai-tool-btn.consensus{background:#fdf4ff;color:#86198f;border-color:#f0abfc}
+.ai-tool-btn.perplexity{background:#f5f3ff;color:#4c1d95;border-color:#ddd6fe}
+@media(max-width:480px){.ai-tools-grid{grid-template-columns:1fr}}
+.confirm-box{background:#f0f4f8;border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:.84rem;line-height:1.6;border-left:3px solid var(--ku-gold)}
+.confirm-btns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.cbtn{padding:7px 16px;border-radius:10px;border:none;cursor:pointer;font-size:.8rem;font-weight:700}
+.cbtn.yes{background:var(--primary-color);color:#fff}.cbtn.refine{background:#fff;color:var(--primary-color);border:1.5px solid var(--primary-color)}
+/* RESULT CARDS */
+.rcard{background:#fff;border-radius:10px;padding:12px;border:1px solid var(--br);margin-bottom:8px;transition:box-shadow .2s}
+.rcard:hover{box-shadow:0 2px 12px rgba(0,51,102,.12)}
+.rcard-title{font-size:.84rem;font-weight:700;color:var(--primary-color);line-height:1.3;margin-bottom:4px}
+.rcard-title a{color:var(--primary-color);text-decoration:none}.rcard-title a:hover{text-decoration:underline}
+.rcard-meta{font-size:.74rem;color:var(--mu);line-height:1.5}
+.rcard-meta strong{color:var(--txt)}
+.rcard-desc{font-size:.76rem;color:var(--mu);margin-top:4px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rcard-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.rcard-tag{font-size:.66rem;padding:2px 7px;border-radius:8px;background:var(--bg);color:var(--mu);font-weight:600}
+.rcard-tag.oa{background:#D1FAE5;color:#065F46}
+.rcard-actions{display:flex;gap:6px;margin-top:8px}
+.rcard-btn{padding:4px 10px;border-radius:8px;font-size:.72rem;border:1px solid var(--br);background:#fff;color:var(--primary-color);cursor:pointer;font-weight:600;transition:all .2s}
+.rcard-btn:hover{background:var(--primary-color);color:#fff}
+.cite-box{background:var(--bg);border-radius:8px;padding:8px 10px;font-size:.76rem;font-family:monospace;line-height:1.5;margin-top:6px;word-break:break-word;border-left:3px solid var(--ku-gold)}
+/* STREAMING ANIMATION */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.stream-word{animation:fadeIn .15s ease-in}
+/* MISC */
+.sarea{padding:12px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1}
+.nl-box{background:#fff;border-radius:var(--radius);padding:14px;border:1px solid var(--br)}
+.nl-box label{font-size:.8rem;font-weight:700;display:block;margin-bottom:8px}
+.nl-row{display:flex;gap:7px}
+.nl-row input{flex:1;padding:10px 14px;border:2px solid var(--br);border-radius:12px;font-size:.88rem;outline:none;min-width:0}
+.go{padding:10px 18px;background:var(--primary-color);color:#fff;border:none;border-radius:12px;cursor:pointer;font-weight:700;font-size:.86rem;flex-shrink:0}
+.tog-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.tog{display:flex;align-items:center;gap:4px;font-size:.76rem;color:var(--mu);cursor:pointer}
+.tog input{accent-color:var(--primary-color)}
+.yr{width:65px;padding:5px 7px;border:1.5px solid var(--br);border-radius:8px;font-size:.78rem;text-align:center;outline:none}
+.sstatus{font-size:.8rem;color:var(--mu);padding:4px 0;min-height:18px}
+.barea{padding:12px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:10px}
+.banner{border-radius:var(--radius);padding:14px;color:#fff;text-align:center}
+.banner h3{font-size:.95rem;font-weight:700;margin-bottom:4px}.banner p{font-size:.78rem;opacity:.9;margin-bottom:10px}
+.banner a{display:inline-block;padding:7px 20px;background:#fff;border-radius:20px;font-weight:700;font-size:.82rem;text-decoration:none}
+.bcard{background:#fff;border-radius:var(--radius);padding:14px;border:1px solid var(--br)}
+.bcard h3{font-size:.88rem;font-weight:700;margin-bottom:10px;color:var(--primary-color)}
+.ll a{display:block;padding:7px 0;font-size:.82rem;color:var(--t);text-decoration:none;border-bottom:1px solid var(--br)}
+.ll a:last-child{border-bottom:none}.ll a:hover{color:var(--primary-color)}
+.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.guide-card{background:#fff;border-radius:10px;padding:10px;border:1px solid var(--br);text-decoration:none;transition:all .2s;display:block}
+.guide-card:hover{border-color:var(--primary-color);box-shadow:0 2px 8px rgba(0,51,102,.1)}
+.guide-card .icon{font-size:1.4rem;margin-bottom:4px}.guide-card .name{font-size:.78rem;font-weight:700;color:var(--primary-color)}
+.guide-card .desc{font-size:.7rem;color:var(--mu);margin-top:2px}
+.era{padding:12px;overflow-y:auto;flex:1}
+.abar{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+.abtn{width:26px;height:26px;border-radius:7px;border:1.5px solid var(--br);background:#fff;font-size:.72rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.abtn:hover,.abtn.active{background:var(--primary-color);color:#fff;border-color:var(--primary-color)}
+.dg{margin-bottom:14px}.dg h2{font-size:.95rem;font-weight:800;color:var(--primary-color);margin-bottom:7px;padding-bottom:3px;border-bottom:2px solid var(--bg)}
+.di{background:#fff;border-radius:9px;padding:9px 12px;margin-bottom:5px;border:1px solid var(--br)}
+.di h4{font-size:.82rem;font-weight:700}.di p{font-size:.75rem;color:var(--mu);margin-top:2px}.di a{font-size:.72rem;color:var(--t);display:inline-block;margin-top:3px}
+@media(max-width:480px){.hdr-text h1{font-size:.9rem}.guides-grid{grid-template-columns:1fr}.msg{max-width:95%}.model-opt{padding:3px 7px;font-size:.62rem}}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#c4b5fd;border-radius:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr-logo" style="background:none;padding:0;overflow:hidden"><img src="data:image/png;base64,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" alt="LibBee" style="width:42px;height:42px;object-fit:contain;border-radius:8px"></div>
+  <div class="hdr-text"><h1>LibBee</h1><p>YOUR_LIBRARY_NAME AI Assistant</p></div>
+  <div class="model-switcher">
+    <button class="model-opt" id="btnClaude" onclick="switchModel('claude')">Claude</button>
+    <button class="model-opt active-gpt" id="btnGPT" onclick="switchModel('gpt')">ChatGPT</button>
+  </div>
+  <a class="hdr-acct" href="YOUR_PRIMO_BASE/account&section=overview" target="_blank">👤 My Account</a>
+</header>
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('chat')"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAIAAADZrBkAAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAADc0lEQVR42i2TX2xTZRjG3/f7zjk97Tlt2dJ/7v9gQlxk3cgoZZNuGRHFxHihWUiMXkiiF3plRqIXEi+5MjGo6AUaw/gTiSZqjHrhJkoAB+vCNgE3HbCMdhtdt3Ztd87p+b7Xi+76+eX5PTcPruVXAQAAEBAApBTIGBFJKT0eTVU0y7YYQ6BaDkAAAIyIgAAICQAZ+AMBzplpGuFQzHVlJrOsaR4piYCgRgIAgrLdgEAEju2Oj/2SSh2anJ0aGxs3DH9PT1ckEiIpkXOCbR8QKNtaIsZY2bYMwzc8PDwxMVXZKp8f/XpwcKi4ua7ruiuFdCUg1vCaDQBASuk3Da5qjBup/l29iQOaGjx9aqS185m9XXGvrvkMnxQSEQkAc7mV2lwAgUw/89GH9abR3LEWrsv+dTP0dGPAqj+6upLt2ZfY2d4gpIvACEghIEQSQu7YERw9/+2uwoXuroS680bYzOdzL+pNb7c3xlKp/p+/O2eYRxpiIcepAiIDkETg0ZT7S+sLVz4diAfYRvHudP/wW9r1NLa0tVF5afG3k97bI99fvujzBYV0EYERkRSux+v/4dLZweYHpMfueyo2/nvixPu9e7esqyf/++md0xeuHU7utu98eWNyNmCaQghGRLquTU3P2XOXup+sK5RcM8gMfbk1/Hm0fuZ2ZuKL35f1uuxjJ3jkqfKv33xCTAciBgDI+PzcXEQvANMVd725YKZvtZ35rHwgmVso/GM5SxNpIaSM1PnKq/eKJYtzxhCZbVstrS2PnCbH3gJFQycXb/Mn+sTUpHruopU8qL2wvynIK/OZrfr2g35DFUIyKSUA62iLBjqPXb9b8vtUkE6zX+Vq9wen/Hv2hAY7+l7bLxy7+MfDJ55/+Q3XKSNjDACISFP5wOFnbxXjVnljzam7uuDom8bHx5Mjb+5rsjZ1bv85Uwj3Hu/c3WjZVQBkACSFZFxpjJodfa+Pzzik+X8cz//9QHn37PxXl2cf21ppfWXGSrxy7NVyqcg5qz0AAEEIybnal4wveF+6M51+7zlZtaDKGqo0cK3YP3ovrkQTxbUVrqhCSADCTHYREQCQc+441sPFbDo9zch5lFn1aCwaayhVHN1rFvLZeHf30NChSqXCuYLZ5cXahxCRc151bGS4Waqs5zdsywYkhXMgqroiGotGIqEa+T8UMKXJiAJNnAAAAABJRU5ErkJggg==" alt="" style="width:18px;height:18px;object-fit:contain;vertical-align:middle;margin-right:4px">Ask LibBee</div>
+  <div class="tab" onclick="switchTab('search')">🔍 AI Search — Articles & Books</div>
+  <div class="tab" onclick="switchTab('guides')">📚 Guides</div>
+  <div class="tab" onclick="switchTab('services')">🏛️ Services</div>
+  <div class="tab" onclick="switchTab('eresources')">🗄️ Databases</div>
+</div>
+<div class="panels">
+  <div class="panel active" id="panel-chat">
+    <div class="msgs" id="chatMsgs">
+      <div class="msg bot"><div class="av" style="background:transparent"><img src="data:image/png;base64,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" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%"></div><div class="bub">
+        Hello! I'm the <strong>YOUR_LIBRARY_NAME AI Assistant</strong> 👋<br><br>
+        I can help you with anything library-related — finding books, articles, and research materials, navigating library services, answering general library questions, or guiding your academic research. Just ask in plain language!<br><br>
+        <span style="font-size:.75rem;color:var(--mu)">Switch between <strong style="color:#10A37F">ChatGPT</strong> and <strong style="color:#D97706">Claude</strong> using the toggle above.</span>
+      </div></div>
+    </div>
+    <div class="chips" id="chips">
+      <div class="chip" onclick="askForSubject()">📚 Find Articles &amp; Books</div>
+      <div class="chip" onclick="chip('What are the library hours?')">⏰ Library hours</div>
+      <div class="chip" onclick="chip('How do I reserve a study room?')">🚪 Room booking</div>
+      <div class="chip" onclick="chip('How do I publish open access at YOUR_UNIVERSITY_NAME?')">📤 OA publishing support</div>
+      <a class="chip" href="YOUR_LIBRARY_URL/aitools" target="_blank" style="text-decoration:none">🤖 AI Research Tools</a>
+      <a class="chip" href="YOUR_LIBRARY_URL/askus" target="_blank" style="text-decoration:none">💬 Contact a Librarian</a>
+    </div>
+    <div class="cin">
+      <button class="clr" onclick="clearChat()">🗑️ Clear Chat</button>
+      <input type="text" id="chatIn" placeholder="Ask me anything…" onkeydown="if(event.key==='Enter')sendChat()" />
+      <button class="send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+  <div class="panel" id="panel-search">
+    <div class="sarea">
+      <div class="nl-box">
+        <label>🔍 Smart Search — AI builds query, PRIMO returns real results</label>
+        <div class="nl-row">
+          <input type="text" id="sIn" placeholder='e.g. "AI in education from 2022 peer reviewed"' onkeydown="if(event.key==='Enter')doSearch()" />
+          <button class="go" onclick="doSearch()">Search</button>
+        </div>
+        <div class="tog-row">
+          <label class="tog"><input type="checkbox" id="sPR"> 🔬 Peer Reviewed</label>
+          <label class="tog"><input type="checkbox" id="sOA"> 🔓 Open Access</label>
+          <label class="tog"><input type="checkbox" id="sOL"> 🌐 Online Only</label>
+          <span style="font-size:.76rem;color:var(--mu)">📅</span>
+          <input class="yr" type="text" id="sYF" placeholder="From">–<input class="yr" type="text" id="sYT" placeholder="To">
+        </div>
+      </div>
+      <div class="sstatus" id="sStatus"></div>
+      <div id="sResults"></div>
+    </div>
+  </div>
+  <div class="panel" id="panel-guides">
+    <div class="barea">
+      <div class="bcard">
+        <h3>📚 Subject & Research Guides</h3>
+        <p style="font-size:.78rem;color:var(--mu);margin-bottom:10px">Expert guides curated by KU librarians</p>
+        <div class="guides-grid">
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">🔬</div><div class="name">All Subject Guides</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">⚙️</div><div class="name">Engineering</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">🏥</div><div class="name">Medicine & Health</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">💻</div><div class="name">Computing & AI</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">⚗️</div><div class="name">Chemistry</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/guides" target="_blank"><div class="icon">📊</div><div class="name">Research Skills</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/oa" target="_blank"><div class="icon">🔓</div><div class="name">Open Access</div></a>
+          <a class="guide-card" href="YOUR_LIBRARY_URL/orcid" target="_blank"><div class="icon">🆔</div><div class="name">ORCiD & Impact</div></a>
+        </div>
+        <a href="YOUR_LIBRARY_URL/guides" target="_blank" style="display:block;margin-top:10px;text-align:center;padding:8px;background:var(--primary-color);color:#fff;border-radius:10px;text-decoration:none;font-weight:700;font-size:.82rem">View All LibGuides →</a>
+      </div>
+      <div class="banner" style="background:linear-gradient(135deg,var(--primary-color),#0EA5E9)">
+        <h3>🤖 PRIMO AI Research Assistant</h3>
+        <p>Use KU's built-in AI tool for intelligent research discovery</p>
+        <a href="https://${LIBBEE_CONFIG.PRIMO_BASE || "#"}" target="_blank" style="color:var(--primary-color)">Launch Catalog AI →</a>
+      </div>
+    </div>
+  </div>
+  <div class="panel" id="panel-services">
+    <div class="barea">
+      <div class="banner" style="background:var(--primary-color)"><h3>📋 My Library Account</h3><p>View loans, renewals, requests, fines & fees</p><a href="YOUR_PRIMO_BASE/account&section=overview" target="_blank" style="color:var(--primary-color)">Open My Account →</a></div>
+      <div class="banner" style="background:linear-gradient(135deg,#0284C7,#0EA5E9)"><h3>🔓 Open Access Support</h3><p>APC funding, OA policies</p><a href="YOUR_LIBRARY_URL/oa" target="_blank" style="color:#0284C7">OA Publishing →</a></div>
+      <div class="bcard"><h3>🔗 All Library Services</h3><div class="ll">
+        <a href="YOUR_PRIMO_BASE/account&section=overview" target="_blank">📋 My Library Account</a>
+        <a href="YOUR_LIBRARY_URL/oa" target="_blank">🔓 Open Access Publishing</a>
+        <a href="YOUR_LIBRARY_URL/ill" target="_blank">📬 Interlibrary Loan</a>
+        <a href="YOUR_LIBRARY_URL/rooms" target="_blank">🚪 Reserve a Study Room</a>
+        <a href="YOUR_LIBRARY_URL/request" target="_blank">📥 Request New Material</a>
+        <a href="YOUR_LIBRARY_URL/askus" target="_blank">💬 Ask a Librarian</a>
+        <a href="YOUR_LIBRARY_URL/google-scholar" target="_blank">🎓 Google Scholar @ KU</a>
+        <a href="YOUR_LIBRARY_URL/orcid" target="_blank">🆔 ORCiD Guide</a>
+        <a href="YOUR_INSTITUTIONAL_REPOSITORY_URL" target="_blank">🗄️ Khazna Repository</a>
+        <a href="YOUR_LIBRARY_URL/medical" target="_blank">🏥 Medical Library</a>
+        <a href="YOUR_LIBRARY_URL/alumni" target="_blank">🎓 Alumni Services</a>
+      </div></div>
+    </div>
+  </div>
+  <div class="panel" id="panel-eresources">
+    <div class="era">
+      <div style="font-size:.78rem;font-weight:700;color:var(--mu);text-transform:uppercase;margin-bottom:8px">Databases A–Z — <a href="YOUR_LIBRARY_URL/eresources" target="_blank" style="color:var(--t)">View full list →</a></div>
+      <div class="abar" id="abar"></div>
+      <div id="dbList"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// =================================================================
+// CONFIG
+// =================================================================
+const W = LIBBEE_CONFIG.WORKER_URL;
+const VID = LIBBEE_CONFIG.PRIMO_VID || '';
+const PRIMO_BASE = LIBBEE_CONFIG.PRIMO_BASE || '';
+const AI_URL = LIBBEE_CONFIG.PRIMO_AI_URL || '';
+const ERESOURCES = LIBBEE_CONFIG.ERESOURCES_URL || '#';
+const RAG_URL = LIBBEE_CONFIG.HF_SPACE_URL;
+
+// =================================================================
+// FAQ KNOWLEDGE BASE — instant answers, zero API cost
+// =================================================================
+const FAQ_KB = [
+  {q:/library hours|opening hours|what time|when.*open|when.*close/i, a:'For current library hours, please visit: <a href="YOUR_LIBRARY_URL/hours" target="_blank">YOUR_LIBRARY_URL/hours</a>. Hours may vary during exam periods and holidays.'},
+  {q:/reserve.*room|book.*room|study room|group room|room booking/i, a:'You can reserve a study room online at: <a href="YOUR_LIBRARY_URL/rooms" target="_blank">YOUR_LIBRARY_URL/rooms</a>. Rooms can be booked in advance and are available on a first-come, first-served basis.'},
+  {q:/interlibrary loan|ill |request.*book.*another/i, a:'YOUR_UNIVERSITY_NAME offers Interlibrary Loan (ILL) for items not available in our collection. Submit your request at: <a href="YOUR_LIBRARY_URL/ill" target="_blank">YOUR_LIBRARY_URL/ill</a>'},
+  {q:/renew.*book|extend.*loan|loan period|how long.*borrow|borrowing/i, a:'You can renew your loans through your library account: <a href="YOUR_PRIMO_BASE/account" target="_blank">My Library Account</a>. Most items can be renewed up to 3 times if not requested by another user.'},
+  {q:/fine|fee|overdue|penalty|late.*return/i, a:'Information about fines and fees can be found in your library account: <a href="YOUR_PRIMO_BASE/account&section=overview" target="_blank">My Library Account</a>. Contact the circulation desk for questions about specific charges.'},
+  {q:/open access|publish.*oa|apc|article processing/i, a:'YOUR_UNIVERSITY_NAME supports open access publishing. Learn about APC funding and OA policies at: <a href="YOUR_LIBRARY_URL/oa" target="_blank">YOUR_LIBRARY_URL/oa</a>'},
+  {q:/orcid|researcher.*id|author.*id/i, a:'Set up your ORCiD researcher profile with our guide: <a href="YOUR_LIBRARY_URL/orcid" target="_blank">YOUR_LIBRARY_URL/orcid</a>. ORCiD helps link your publications to your identity.'},
+  {q:/khazna|institutional.*repository|thesis.*submit|deposit/i, a:'Khazna is YOUR_UNIVERSITY_NAME\'s institutional repository for theses and research output: <a href="YOUR_INSTITUTIONAL_REPOSITORY_URL" target="_blank">khazna.your-university.edu</a>'},
+  {q:/google scholar|scholar.*ku/i, a:'Access Google Scholar with YOUR_UNIVERSITY_NAME full-text links enabled: <a href="YOUR_LIBRARY_URL/google-scholar" target="_blank">YOUR_LIBRARY_URL/google-scholar</a>'},
+  {q:/print|printing|photocopy|scan/i, a:'Printing, photocopying, and scanning facilities are available in both library branches. For details, visit the circulation desk or contact us at: <a href="YOUR_LIBRARY_URL/askus" target="_blank">Ask a Librarian</a>'},
+  {q:/wifi|internet|network|connect/i, a:'WiFi is available throughout the library. Connect to the campus WiFi network using your KU credentials. For IT support, contact the IT helpdesk.'},
+  {q:/contact|phone|email.*library|ask.*librarian/i, a:'You can reach the library team through Ask a Librarian: <a href="YOUR_LIBRARY_URL/askus" target="_blank">YOUR_LIBRARY_URL/askus</a>'},
+  {q:/tour|visit.*library|library.*tour|orientation/i, a:'Library tours and instruction sessions are available: <a href="YOUR_LIBRARY_URL/tours" target="_blank">YOUR_LIBRARY_URL/tours</a>'},
+  {q:/alumni|graduate.*access/i, a:'Alumni can access library services through the alumni program: <a href="YOUR_LIBRARY_URL/alumni" target="_blank">YOUR_LIBRARY_URL/alumni</a>'},
+  {q:/request.*material|suggest.*purchase|new.*book/i, a:'You can request the library to purchase new materials: <a href="YOUR_LIBRARY_URL/request" target="_blank">YOUR_LIBRARY_URL/request</a>'},
+  {q:/citation|how.*cite|referencing|bibliography/i, a:'For help with citations and referencing, check our Research Skills guide: <a href="YOUR_LIBRARY_URL/guides" target="_blank">YOUR_LIBRARY_URL/guides</a>. The library also provides access to citation management tools.'},
+  {q:/medical library|health.*library/i, a:'The Medical Library serves the College of Medicine and Health Sciences: <a href="YOUR_LIBRARY_URL/medical" target="_blank">YOUR_LIBRARY_URL/med</a>'},
+  {q:/event|workshop|training|webinar/i, a:'Check the library events calendar for upcoming workshops and training: <a href="YOUR_LIBRARY_EVENTS_URL" target="_blank">Library Events Calendar</a>'},
+  {q:/database|e-?resource|electronic.*resource|which.*database/i, a:'Browse all YOUR_LIBRARY_NAME databases at: <a href="YOUR_LIBRARY_URL/eresources" target="_blank">YOUR_LIBRARY_URL/eresources</a>. We have 50+ databases covering all disciplines.'},
+  {q:/libguide|subject.*guide|research.*guide/i, a:'Subject-specific research guides created by librarians are available at: <a href="YOUR_LIBRARY_URL/guides" target="_blank">YOUR_LIBRARY_URL/guides</a>'},
+  {q:/remote.*access|off.*campus|access.*home|vpn/i, a:'All electronic resources are accessible remotely with your KU credentials. Simply click the database link from <a href="YOUR_LIBRARY_URL/eresources" target="_blank">YOUR_LIBRARY_URL/eresources</a> and log in when prompted.'},
+  {q:/plagiarism|turnitin|similarity/i, a:'For questions about plagiarism tools like Turnitin, contact your department or the library: <a href="YOUR_LIBRARY_URL/askus" target="_blank">Ask a Librarian</a>'},
+];
+
+// =================================================================
+// SUBJECT → DATABASE MAPPING
+// =================================================================
+const SUBJECT_MAP = {
+  'mechanical engineering': ['ASME Digital Library','Knovel','ScienceDirect','Scopus','ASTM Compass'],
+  'civil engineering': ['ASCE Library','Knovel','ScienceDirect','Scopus','ASTM Compass'],
+  'electrical engineering': ['IEEE Xplore','ScienceDirect','Scopus','Applied Science & Technology Source'],
+  'computer science': ['ACM Digital Library','IEEE Xplore','ScienceDirect','Scopus','arXiv.org'],
+  'artificial intelligence': ['IEEE Xplore','ACM Digital Library','arXiv.org','ScienceDirect','Scopus'],
+  'machine learning': ['IEEE Xplore','ACM Digital Library','arXiv.org','ScienceDirect','Scopus'],
+  'data science': ['IEEE Xplore','ACM Digital Library','ScienceDirect','Scopus','ProQuest'],
+  'aerospace engineering': ['AIAA','ScienceDirect','Scopus','Knovel','ASME Digital Library'],
+  'chemical engineering': ['ACS','SciFindern','ScienceDirect','Knovel','Scopus'],
+  'chemistry': ['ACS','SciFindern','RSC Journals','Scopus','Web of Science'],
+  'physics': ['APS Journals','AIP','IOPScience','arXiv.org','Nature Journals'],
+  'engineering physics': ['AIP','APS Journals','IOPScience','IEEE Xplore','ScienceDirect'],
+  'industrial engineering': ['ScienceDirect','Scopus','Emerald Insight','IEEE Xplore','ProQuest'],
+  'mathematics': ['MathSciNet','ScienceDirect','Scopus','Springer','JSTOR'],
+  'biomedical engineering': ['PubMed','ScienceDirect','IEEE Xplore','Nature Journals','Scopus'],
+  'medicine': ['ClinicalKey Student','PubMed','Cochrane Library','UpToDate','CINAHL Ultimate'],
+  'nursing': ['CINAHL Ultimate','PubMed','Cochrane Library','Medline Ultimate','Embase'],
+  'pharmacy': ['PubMed','Embase','ScienceDirect','Scopus','Cochrane Library'],
+  'petroleum engineering': ['OnePetro','ScienceDirect','Scopus','EarthDoc','Knovel'],
+  'geology': ['GeoScience World','EarthDoc','Scopus','ScienceDirect','Web of Science'],
+  'environmental science': ['ScienceDirect','Scopus','Web of Science','Nature Journals','Springer'],
+  'business': ['Business Source Complete','Emerald Insight','ProQuest','Scopus','JSTOR'],
+  'nuclear engineering': ['ScienceDirect','Scopus','AIP','Knovel','Web of Science'],
+  'materials science': ['ScienceDirect','Scopus','Nature Journals','Springer','Knovel'],
+  'optics': ['Optica Publishing Group','AIP','ScienceDirect','IEEE Xplore','Scopus'],
+};
+const SUBJ_RE = /i\s*(study|am studying|am in|major in|do|am doing)\s+(.+)/i;
+const SUBJ_RE2 = /(?:recommend|suggest|best)\s*(?:databases?|resources?)\s*(?:for|about)\s+(.+)/i;
+
+function matchSubject(msg) {
+  let m = msg.match(SUBJ_RE);
+  let subj = m ? m[2].trim().toLowerCase().replace(/[?.!]/g,'') : null;
+  if (!subj) { m = msg.match(SUBJ_RE2); subj = m ? m[1].trim().toLowerCase().replace(/[?.!]/g,'') : null; }
+  if (!subj) return null;
+  for (const [key, dbs] of Object.entries(SUBJECT_MAP)) {
+    if (subj.includes(key) || key.includes(subj)) return { subject: key, databases: dbs };
+  }
+  return null;
+}
+
+// =================================================================
+// MODEL STATE + SWITCHER
+// =================================================================
+let activeModel = 'gpt';
+function switchModel(m) {
+  activeModel = m;
+  document.getElementById('btnClaude').className = 'model-opt' + (m==='claude'?' active-claude':'');
+  document.getElementById('btnGPT').className = 'model-opt' + (m==='gpt'?' active-gpt':'');
+}
+function badge() { return activeModel==='claude'?'<span class="model-badge claude-badge">Claude</span>':'<span class="model-badge gpt-badge">ChatGPT</span>'; }
+
+// =================================================================
+// UNIFIED LLM CALL WITH FALLBACK
+// =================================================================
+async function callLLM({system,messages,max_tokens}) {
+  max_tokens = max_tokens||500;
+  const primary = activeModel;
+  const fallback = activeModel==='claude'?'gpt':'claude';
+  try {
+    return await _callModel(primary, {system,messages,max_tokens});
+  } catch(e) {
+    console.warn(`${primary} failed: ${e.message}, trying ${fallback}`);
+    try {
+      return await _callModel(fallback, {system,messages,max_tokens});
+    } catch(e2) {
+      throw new Error(`Both models failed. ${primary}: ${e.message} | ${fallback}: ${e2.message}`);
+    }
+  }
+}
+async function _callModel(model, {system,messages,max_tokens}) {
+  if (model==='claude') {
+    const body = {model:'claude-sonnet-4-20250514',max_tokens,messages};
+    if(system) body.system=system;
+    const r = await fetch(W+'/claude',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(e?.error?.message||'Claude error '+r.status);}
+    const d=await r.json(); return d.content?.[0]?.text||'';
+  } else {
+    const msgs=[];
+    if(system) msgs.push({role:'system',content:system});
+    for(const m of messages) msgs.push({role:m.role,content:m.content});
+    const r=await fetch(W+'/openai',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini',max_tokens,messages:msgs})});
+    if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(e?.error?.message||'ChatGPT error '+r.status);}
+    const d=await r.json(); return d.choices?.[0]?.message?.content||'';
+  }
+}
+
+// =================================================================
+// CLAUDE WEB SEARCH (for general questions)
+// =================================================================
+async function callClaudeWebSearch(messages, system) {
+  const body = {
+    model: 'claude-sonnet-4-20250514',
+    max_tokens: 1000,
+    messages,
+    tools: [{ type: 'web_search_20250305', name: 'web_search' }]
+  };
+  if (system) body.system = system;
+  const r = await fetch(W + '/claude', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!r.ok) throw new Error('Claude web search failed');
+  const d = await r.json();
+  // Extract text from all content blocks
+  let text = '';
+  let sources = [];
+  for (const block of (d.content || [])) {
+    if (block.type === 'text') text += block.text;
+    if (block.type === 'web_search_tool_result') {
+      for (const sr of (block.content || [])) {
+        if (sr.type === 'web_search_result' && sr.url) {
+          sources.push({ title: sr.title || '', url: sr.url });
+        }
+      }
+    }
+  }
+  return { text, sources };
+}
+
+// =================================================================
+// RAG KNOWLEDGE QUERY (via HuggingFace Space)
+// =================================================================
+// Fix 10: fetch with cold-start retry — HF free tier sleeps after inactivity
+async function fetchWithRetry(url, options, retries=4, delayMs=8000) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutMs = attempt === 0 ? 30000 : 60000; // longer timeout on retries
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
+      const r = await fetch(url, { ...options, signal: controller.signal });
+      clearTimeout(timeout);
+      // Success — remove warm-up message if shown
+      document.getElementById('warm-msg')?.remove();
+      return r;
+    } catch (e) {
+      if (attempt === retries) {
+        // All retries exhausted — remove warm-up message and throw
+        document.getElementById('warm-msg')?.remove();
+        throw e;
+      }
+      // Show / update warming message
+      const cm = document.getElementById('chatMsgs');
+      let warm = document.getElementById('warm-msg');
+      if (!warm) {
+        warm = document.createElement('div');
+        warm.id = 'warm-msg';
+        warm.className = 'msg bot';
+        cm?.appendChild(warm); cm && (cm.scrollTop = 9999);
+      }
+      const waitSecs = Math.round((delayMs * (attempt + 1)) / 1000);
+      warm.innerHTML = `<div class="av">⏳</div><div class="bub" style="font-size:.82rem;color:var(--mu)">
+        🐝 LibBee is waking up the AI service… please wait (attempt ${attempt+1}/${retries})<br>
+        <span style="font-size:.74rem;opacity:.7">HF Space cold start can take up to 60 seconds on first use.</span>
+      </div>`;
+      await new Promise(res => setTimeout(res, delayMs));
+    }
+  }
+}
+
+async function callRAG(question) {
+  const model = activeModel === 'claude' ? 'claude' : 'gpt';
+  const history = chatHist.slice(-5).map(m => ({ role: m.role, content: m.content }));
+  const r = await fetchWithRetry(RAG_URL + '/rag', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question, model, history })
+  });
+  // Remove warming message if shown
+  document.getElementById('warm-msg')?.remove();
+  if (!r || !r.ok) throw new Error('RAG service unavailable');
+  const data = await r.json();
+  // has_answer=false means KB had no relevant content — fall through to general LLM
+  if (data.has_answer === false || !data.answer) throw new Error('no_library_answer');
+  if (data.error && !data.answer) throw new Error(data.error);
+  let html = fmt(data.answer);
+  if (data.sources && data.sources.length > 0) {
+    html += '<div style="margin-top:8px;font-size:.75rem;color:var(--mu)"><strong>Source:</strong> <a href="YOUR_LIBRARY_URL/" target="_blank" style="color:var(--t)">YOUR_LIBRARY_NAME</a></div>';
+  }
+  return html;
+}
+
+// =================================================================
+// AGENT CALL (Batch 3: multi-tool agent endpoint)
+// Calls /agent on HF Space — classifies intent, runs tools, synthesises
+// =================================================================
+async function callAgent(question) {
+  const model = activeModel === 'claude' ? 'claude' : 'gpt';
+  const history = chatHist.slice(-6).map(m => ({ role: m.role, content: m.content }));
+  const r = await fetchWithRetry(RAG_URL + '/agent', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question, model, history })
+  });
+  document.getElementById('warm-msg')?.remove();
+  if (!r || !r.ok) throw new Error('Agent service unavailable');
+  const data = await r.json();
+  if (!data.answer) throw new Error(data.error || 'No answer from agent');
+
+  // If agent classified as search — signal caller to redirect to fullSearch
+  // This handles misspelled research questions that slipped past frontend routing
+  if (data.intent === 'search_academic' || data.intent === 'search_medical') {
+    const err = new Error('REDIRECT_TO_SEARCH');
+    err.redirectToSearch = true;
+    err.correctedQuery = data.corrected_query || question;
+    throw err;
+  }
+
+  let html = fmt(data.answer);
+
+  // Show search results if agent found any
+  if (data.search_results && data.search_results.length > 0) {
+    const agentSid = 'AG' + Date.now();
+    window._primoResults[agentSid] = data.search_results;
+    html += `<div style="margin-top:10px;font-size:.82rem;font-weight:700;color:var(--primary-color)">📄 Relevant results found:</div>`;
+    html += data.search_results.slice(0, 3).map((r, i) => renderResultCard(r, i, agentSid)).join('');
+  }
+
+  // Show tool badges
+  if (data.tools_used && data.tools_used.length > 0) {
+    const toolLabels = {
+      'get_library_info': '📚 KU Knowledge Base',
+      'PRIMO': '🔍 PRIMO',
+      'PubMed': '🏥 PubMed',
+      'Semantic Scholar': '🎓 Semantic Scholar',
+    };
+    const badges = data.tools_used
+      .map(t => `<span style="font-size:.66rem;padding:2px 7px;border-radius:8px;background:#e0e7ff;color:#3730a3;font-weight:600">${toolLabels[t]||t}</span>`)
+      .join(' ');
+    html += `<div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">${badges}</div>`;
+  }
+
+  // Model + intent badge
+  const intentLabel = {
+    library_info: '🏛️ Library',
+    search_academic: '🔍 Academic',
+    search_medical: '🏥 Medical',
+    general: '💡 General'
+  }[data.intent] || '';
+  html += ` ${badge()} <span class="model-badge" style="background:#f0fdf4;color:#14532d">${intentLabel}</span>`;
+
+  // Return both html and the corrected query so recovery banner shows clean text
+  return { html, correctedQuery: data.corrected_query || question };
+}
+
+// =================================================================
+// PRIMO API SEARCH
+// =================================================================
+async function searchPRIMO(query, opts={}) {
+  const r = await fetch(W+'/primo', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      query, limit: opts.limit||5, scope: opts.scope||'MyInst_and_CI', tab: opts.tab||'Everything',
+      peer_reviewed: opts.pr||false, open_access: opts.oa||false,
+      resource_type: opts.type||null, year_from: opts.yf||null, year_to: opts.yt||null
+    })
+  });
+  if(!r.ok) { const e=await r.json().catch(()=>({})); throw new Error(e?.error?.message||'PRIMO error'); }
+  return await r.json();
+}
+
+// =================================================================
+// CITATION GENERATOR
+// =================================================================
+function genCitation(r, style='apa') {
+  const auth = r.creator||'Unknown'; const yr = r.date||'n.d.'; const title = r.title||'Untitled';
+  const src = r.source||''; const vol = r.volume||''; const iss = r.issue||''; const pg = r.spage||'';
+  const doi = r.doi ? 'https://doi.org/'+r.doi : '';
+  if (style==='apa') {
+    let c = `${auth} (${yr}). ${title}.`;
+    if(src) c+=` <em>${src}</em>`;
+    if(vol) c+=`, <em>${vol}</em>`;
+    if(iss) c+=`(${iss})`;
+    if(pg) c+=`, ${pg}${r.epage?'–'+r.epage:''}`;
+    c+='.';
+    if(doi) c+=` ${doi}`;
+    return c;
+  }
+  if (style==='ieee') {
+    let c = `${auth}, "${title},"`;
+    if(src) c+=` <em>${src}</em>`;
+    if(vol) c+=`, vol. ${vol}`;
+    if(iss) c+=`, no. ${iss}`;
+    if(pg) c+=`, pp. ${pg}${r.epage?'–'+r.epage:''}`;
+    if(yr) c+=`, ${yr}`;
+    c+='.';
+    if(doi) c+=` doi: ${r.doi}`;
+    return c;
+  }
+  if (style==='harvard') {
+    let c = `${auth} (${yr}) '${title}',`;
+    if(src) c+=` <em>${src}</em>`;
+    if(vol) c+=`, ${vol}`;
+    if(iss) c+=`(${iss})`;
+    if(pg) c+=`, pp. ${pg}${r.epage?'–'+r.epage:''}`;
+    c+='.';
+    if(doi) c+=` Available at: ${doi}`;
+    return c;
+  }
+  return `${auth} (${yr}). ${title}. ${src}`;
+}
+
+function renderResultCard(r, idx, sid) {
+  const doiLink = r.doi ? `https://doi.org/${r.doi}` : (r.link || r.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/` : null);
+  const titleLink = doiLink ? `<a href="${doiLink}" target="_blank">${r.title}</a>` : (r.link ? `<a href="${r.link}" target="_blank">${r.title}</a>` : r.title);
+  const srcBadge = r._source ? `<span class="rcard-tag" style="background:${{'PRIMO':'#fef3c7','PubMed':'#d1fae5','Google Scholar':'#e0e7ff'}[r._source]||'var(--bg)'};color:${{'PRIMO':'#92400e','PubMed':'#065f46','Google Scholar':'#3730a3'}[r._source]||'var(--mu)'}">${r._source}</span>` : '';
+  const citeBadge = r.citations ? `<span class="rcard-tag" style="background:#fef3c7;color:#92400e">Cited: ${r.citations}</span>` : '';
+  const cid = sid ? `${sid}_${idx}` : `global_${idx}`;
+  return `<div class="rcard" id="rc${cid}">
+    <div class="rcard-title">${titleLink}</div>
+    <div class="rcard-meta"><strong>${r.creator||'Unknown'}</strong> · ${r.date||''} · ${r.type||'Article'}</div>
+    ${r.source?`<div class="rcard-meta">${r.source}${r.volume?' Vol.'+r.volume:''}${r.issue?'('+r.issue+')':''}</div>`:''}
+    ${r.description?`<div class="rcard-desc">${r.description}</div>`:''}
+    <div class="rcard-tags">${srcBadge}${citeBadge}${r.openaccess?'<span class="rcard-tag oa">Open Access</span>':''}${r.type?`<span class="rcard-tag">${r.type}</span>`:''}</div>
+    <div class="rcard-actions">
+      <button class="rcard-btn" onclick="showCite('${sid||'global'}',${idx},'apa')">APA</button>
+      <button class="rcard-btn" onclick="showCite('${sid||'global'}',${idx},'ieee')">IEEE</button>
+      <button class="rcard-btn" onclick="showCite('${sid||'global'}',${idx},'harvard')">Harvard</button>
+    </div>
+    <div id="cite${cid}"></div>
+  </div>`;
+}
+
+window._primoResults = window._primoResults || {};
+function showCite(sid, idx, style) {
+  const bucket = window._primoResults[sid] || [];
+  const r = bucket[idx];
+  if(!r) return;
+  document.getElementById('cite'+sid+'_'+idx).innerHTML = `<div class="cite-box">${genCitation(r,style)}</div>`;
+}
+
+// =================================================================
+// TABS
+// =================================================================
+function switchTab(t){
+  ['chat','search','guides','services','eresources'].forEach((n,i)=>{
+    document.querySelectorAll('.tab')[i].classList.toggle('active',n===t);
+    const p=document.getElementById('panel-'+n);p.classList.toggle('active',n===t);p.style.display=n===t?'flex':'none';
+  });
+}
+['chat','search','guides','services','eresources'].forEach(n=>{document.getElementById('panel-'+n).style.display=n==='chat'?'flex':'none';});
+
+// =================================================================
+// URL BUILDERS
+// =================================================================
+function mkURL(bool,tab,scope,facets){
+  let u=`${PRIMO_BASE}?query=any,contains,${encodeURIComponent(bool)},AND&tab=${tab}&search_scope=${scope}&vid=${VID}&lang=en&mode=advanced&offset=0`;
+  for(const f of facets)u+=`&facet=${f}`;return u;
+}
+function buildSearchCard(bool,explanation,corrected,raw,yf,yt,pr,oa,ol){
+  const yr=(yf||yt)?`searchcreationdate,include,${yf||'0001'}|,|${yt||'9999'}`:null;
+  const artF=[...(pr?['tlevel,include,peer_reviewed']:[]),...(oa?['tlevel,include,open_access']:[]),...(ol?['tlevel,include,online_resources']:[]),...(yr?[yr]:[]),'rtype,include,articles'];
+  const allF=[...(pr?['tlevel,include,peer_reviewed']:[]),...(oa?['tlevel,include,open_access']:[]),...(ol?['tlevel,include,online_resources']:[]),...(yr?[yr]:[])];
+  const bkF=[...(yr?[yr]:[]),'rtype,include,books'];
+  const urlAll=mkURL(bool,'Everything','MyInst_and_CI',allF);
+  const urlArt=mkURL(bool,'CentralIndex','CentralIndex',artF);
+  const urlBk=mkURL(bool,'Everything','MyInst_and_CI',bkF);
+  const simpleQ=bool.replace(/[()"]/g,'').replace(/\b(AND|OR)\b/g,' ').replace(/\s+/g,' ').trim();
+  // Detect if user asked for books or articles
+  const q = (raw||'').toLowerCase();
+  const wantBooks = /\b(books?|ebooks?|textbooks?)\b/i.test(q);
+  const wantArticles = /\b(articles?|papers?|journals?|peer.?review)\b/i.test(q);
+  const linkAll = `<a class="slink all" href="${urlAll}" target="_blank">📚 All Resources in PRIMO</a>`;
+  const linkArt = `<a class="slink art" href="${urlArt}" target="_blank">📄 Articles in PRIMO</a>`;
+  const linkBk = `<a class="slink bk" href="${urlBk}" target="_blank">📗 Books in PRIMO</a>`;
+  const linkAI = `<a class="slink ai" href="${AI_URL+encodeURIComponent(simpleQ)}" target="_blank">🤖 PRIMO AI Assistant</a>`;
+  let links;
+  if (wantBooks) links = linkBk + linkAll + linkArt + linkAI;
+  else if (wantArticles) links = linkArt + linkAll + linkBk + linkAI;
+  else links = linkAll + linkArt + linkBk + linkAI;
+  return `<div class="scard"><div class="scard-title">🔍 Search in PRIMO</div><div class="bool-str">${bool}</div><div class="slinks">${links}</div></div>`;
+}
+
+// =================================================================
+// AI TOOLS PANEL
+// naturalQuery = original user question (full natural language)
+// primoKeyword = simplified keyword for PRIMO AI assistant
+// =================================================================
+function buildAIToolsPanel(naturalQuery, primoKeyword) {
+  const nq = encodeURIComponent(naturalQuery);
+  const pk = encodeURIComponent(primoKeyword);
+  const kuNote = 'KU email required';
+  return `<div class="ai-panel">
+    <div class="ai-panel-title">🤖 AI Tools for Your Query</div>
+    <div class="ai-panel-note">These AI tools search using your full question — sign in with <strong>your.name@youruniversity.edu</strong> where required</div>
+    <div class="ai-tools-grid">
+      <a class="ai-tool-btn leapspace" href="https://www.sciencedirect.com/leapspace?query=${nq}" target="_blank">
+        <span class="ai-tool-icon">🔬</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">LeapSpace</span><span class="ai-tool-note">ScienceDirect AI · ${kuNote}</span></span>
+      </a>
+      <a class="ai-tool-btn scopus" href="https://www-scopus-com.khalifa.idm.oclc.org/pages/ai?query=${nq}" target="_blank">
+        <span class="ai-tool-icon">🔭</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">Scopus AI</span><span class="ai-tool-note">Citation & AI search · ${kuNote}</span></span>
+      </a>
+      <a class="ai-tool-btn primoai" href="${AI_URL}${pk}" target="_blank">
+        <span class="ai-tool-icon">⭐</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">PRIMO AI Assistant</span><span class="ai-tool-note">KU Library discovery AI</span></span>
+      </a>
+      <a class="ai-tool-btn semscholar" href="https://www.semanticscholar.org/search?q=${nq}" target="_blank">
+        <span class="ai-tool-icon">🎓</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">Semantic Scholar</span><span class="ai-tool-note">200M+ free papers</span></span>
+      </a>
+      <a class="ai-tool-btn consensus" href="https://consensus.app/results/?q=${nq}" target="_blank">
+        <span class="ai-tool-icon">🧬</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">Consensus</span><span class="ai-tool-note">AI research synthesis</span></span>
+      </a>
+      <a class="ai-tool-btn perplexity" href="https://www.perplexity.ai/search?q=${nq}" target="_blank">
+        <span class="ai-tool-icon">🔎</span>
+        <span class="ai-tool-info"><span class="ai-tool-name">Perplexity</span><span class="ai-tool-note">AI web research</span></span>
+      </a>
+    </div>
+  </div>`;
+}
+
+// =================================================================
+// BOOLEAN BUILDER + PRIMO RESULTS FLOW
+// =================================================================
+async function buildBoolean(query, history){
+  const currentYear = serverYear;
+
+  // Pre-clean: strip common chat prefixes
+  const cleanedQuery = query
+    .replace(/^(find articles and books on|find articles on|find books on|search for|look for|i want|i need|give me|show me)\s+/i, '')
+    .trim();
+
+  // === PROGRAMMATIC BOOLEAN BUILDER — always available, no LLM needed ===
+  function makeBoolean(text) {
+    const stopRE = /^(of|on|in|the|a|an|and|or|for|to|with|by|from|at|is|are|was|were|be|been|being|have|has|had|do|does|did|will|would|could|should|may|its|this|that|these|those|about|impact|effect|role|influence|importance|use|application|study|analysis|review|what|how|why|when|where|which)$/i;
+    const words = text.split(/\s+/);
+    const concepts = [];
+    let phrase = [];
+    for (const w of words) {
+      const clean = w.replace(/['"]/g, '');
+      if (!stopRE.test(clean) && clean.length > 2) {
+        phrase.push(clean);
+      } else {
+        if (phrase.length > 0) { concepts.push(phrase.join(' ')); phrase = []; }
+      }
+    }
+    if (phrase.length > 0) concepts.push(phrase.join(' '));
+    if (concepts.length >= 2) return concepts.map(c => `"${c}"`).join(' AND ');
+    if (concepts.length === 1) return `"${concepts[0]}"`;
+    return `"${text}"`;
+  }
+
+  function isValidBool(b) {
+    return b && /\b(AND|OR)\b/.test(b) && b.includes('(');
+  }
+
+  // === PRIMARY: HF Space /correct endpoint (separate OpenAI quota from Cloudflare) ===
+  try {
+    const r = await fetchWithRetry(RAG_URL + '/correct', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: cleanedQuery, year: currentYear })
+    });
+    document.getElementById('warm-msg')?.remove();
+    if (r && r.ok) {
+      const result = await r.json();
+      const corrected = result.corrected || cleanedQuery;
+      const boolean = isValidBool(result.boolean) ? result.boolean : makeBoolean(corrected);
+      return {
+        corrected, boolean,
+        natural: result.natural || corrected,
+        year_from: result.year_from || '',
+        year_to: result.year_to || '',
+        peer_reviewed: !!result.peer_reviewed,
+        open_access: !!result.open_access,
+        explanation: result.explanation || '',
+      };
+    }
+  } catch(e) {
+    console.warn('HF /correct failed, trying Cloudflare LLM:', e.message);
+  }
+
+  // === FALLBACK: Cloudflare Worker LLM ===
+  try {
+    const ctx = history.slice(-4).map(m=>`${m.role}: ${m.content}`).join('\n');
+    const prompt = `Fix ALL spelling mistakes in this query, then build a PRIMO Boolean.
+BOOLEAN: (mainTerm OR synonym) AND (mainTerm2 OR synonym2) — use AND/OR/parentheses.
+Examples:
+"impuct glubal waming" → boolean: ("global warming" OR "climate change") AND (impact OR effect)
+"machne lerning helthcare" → boolean: ("machine learning" OR AI) AND (healthcare OR clinical)
+Query: "${cleanedQuery}"
+Context: ${ctx}
+Return ONLY JSON: {"corrected":"fixed","boolean":"(A OR B) AND (C OR D)","natural":"title","year_from":"","year_to":"","peer_reviewed":false,"open_access":false}`;
+
+    const txt = await callLLM({messages:[{role:'user', content:prompt}], max_tokens:300});
+    const s = txt.indexOf('{'), e = txt.lastIndexOf('}');
+    if (s === -1) throw new Error('no_json');
+    const result = JSON.parse(txt.substring(s, e+1));
+    const corrected = result.corrected || cleanedQuery;
+    const boolean = isValidBool(result.boolean) ? result.boolean : makeBoolean(corrected);
+    return {
+      corrected, boolean,
+      natural: result.natural || corrected,
+      year_from: result.year_from || '',
+      year_to: result.year_to || '',
+      peer_reviewed: !!result.peer_reviewed,
+      open_access: !!result.open_access,
+      explanation: result.explanation || '',
+    };
+  } catch(e) {
+    console.warn('All LLM calls failed, using programmatic Boolean:', e.message);
+  }
+
+  // === FULL FALLBACK: programmatic only ===
+  return {
+    corrected: cleanedQuery,
+    boolean: makeBoolean(cleanedQuery),
+    natural: cleanedQuery,
+    year_from: '', year_to: '',
+    peer_reviewed: false, open_access: false, explanation: ''
+  };
+}
+
+// =================================================================
+// Fix 8: SHARED SEARCH CORE — used by both chat (fullSearch) and Search tab (doSearch)
+// Previously duplicate logic; now single code path — fix once, works everywhere
+// =================================================================
+async function executeSearch(query, opts={}) {
+  const maxR = opts.limit || parseInt(botConfig.max_results||'5');
+  let p;
+  try { p = await buildBoolean(query, opts.history||[]); }
+  catch(e) { p = {boolean:query, natural:'Searching for: '+query, explanation:'', year_from:'', year_to:'', peer_reviewed:false, open_access:false}; }
+
+  const {boolean:bool, corrected, natural, explanation, year_from:yf, year_to:yt, peer_reviewed:pr, open_access:oa} = p;
+  const finalPR = opts.pr !== undefined ? opts.pr : !!pr;
+  const finalOA = opts.oa !== undefined ? opts.oa : !!oa;
+  const finalYF = opts.yf || yf || '';
+  const finalYT = opts.yt || yt || '';
+  const cleanQ = bool.replace(/[()"]/g,'').replace(/\b(AND|OR)\b/g,' ').trim();
+
+  const sid = 'S' + Date.now();
+  window._sp = window._sp || {};
+  window._sp[sid] = {q:cleanQ, orig:query, bool, pr:finalPR, oa:finalOA, yf:finalYF, yt:finalYT};
+
+  if (opts.onProgress) opts.onProgress({bool, natural, explanation, corrected, yf:finalYF, yt:finalYT, pr:finalPR, oa:finalOA, sid});
+
+  let results = [], total = 0, searchError = null;
+  try {
+    const data = await searchPRIMO(cleanQ, {pr:finalPR, oa:finalOA, yf:finalYF, yt:finalYT, limit:maxR});
+    results = data.results || [];
+    total = data.total || 0;
+    window._primoResults[sid] = results;
+  } catch(e) { searchError = e.message; }
+
+  return {bool, natural, explanation, corrected, sid, results, total, error:searchError,
+          yf:finalYF, yt:finalYT, pr:finalPR, oa:finalOA, query,
+          isMedical: MEDICAL_RE.test(query),
+          wantBooks: /\b(books?|ebooks?|textbooks?)\b/i.test(query)};
+}
+
+async function fullSearch(msg, chatHist, cm) {
+  const loadEl = document.createElement('div');
+  loadEl.className = 'msg bot'; loadEl.style.maxWidth = '96%';
+  loadEl.innerHTML = `<div class="av">🔍</div><div class="scard"><div class="typing" style="padding:8px 0"><span></span><span></span><span></span><span class="status-text" id="fs-status">✏️ Correcting spelling &amp; building Boolean query…</span></div></div>`;
+  cm.appendChild(loadEl); cm.scrollTop = cm.scrollHeight;
+
+  let progressData = {};
+  const wantBooksEarly = /\b(books?|ebooks?|textbooks?)\b/i.test(msg); // detect early for progress label
+  const res = await executeSearch(msg, {
+    history: chatHist,
+    onProgress: (d) => {
+      progressData = d;
+      const label = wantBooksEarly ? `📗 Book Search: ${d.natural||d.explanation}` : `🔍 ${d.natural||d.explanation}`;
+      loadEl.innerHTML = `<div class="av">🔍</div><div class="scard"><div class="scard-title">${label} ${badge()}</div><div class="bool-str">${d.bool}</div>${buildSearchCard(d.bool,d.explanation,d.corrected,msg,d.yf,d.yt,d.pr,d.oa,false)}<div style="margin-top:10px;font-size:.8rem;color:var(--mu)"><div class="typing"><span></span><span></span><span></span></div> Searching PRIMO…</div><div id="primo-results-area"></div></div>`;
+      cm.scrollTop = cm.scrollHeight;
+    }
+  });
+
+  const label = res.wantBooks ? `📗 Book Search: ${res.natural||res.explanation}` : `🔍 ${res.natural||res.explanation}`;
+  loadEl.innerHTML = `<div class="av">🔍</div><div class="scard"><div class="scard-title">${label} ${badge()}</div><div class="bool-str">${res.bool}</div>${buildSearchCard(res.bool,res.explanation,res.corrected,msg,res.yf,res.yt,res.pr,res.oa,false)}<div id="primo-results-area"></div></div>`;
+
+  const area = loadEl.querySelector('#primo-results-area');
+  if (res.results.length > 0) {
+    let html = `<div style="font-size:.82rem;font-weight:700;color:var(--primary-color);margin:10px 0 6px">📄 PRIMO: Top ${res.results.length} of ${res.total.toLocaleString()} results</div>`;
+    html += res.results.map((r,i) => renderResultCard(r, i, res.sid)).join('');
+    area.innerHTML = html;
+  } else {
+    area.innerHTML = `<div style="font-size:.82rem;color:var(--mu);margin-top:8px">${res.error ? 'PRIMO error: '+res.error : 'No results found. Try refining your search.'}</div>`;
+  }
+
+  // PubMed — separate, medical only; doSearchNew passes sp.orig (natural language) to HF Space backend
+  // "View all in PubMed" link (inside doSearchSource) uses sp.bool — PubMed supports full Boolean
+  const pubmedBtn = res.isMedical ? `<div style="margin-top:8px"><button class="fq" onclick="doSearchNew('${res.sid}','pubmed')" style="padding:6px 14px;background:#d1fae5;color:#065f46;border-radius:8px;font-weight:600;font-size:.8rem;border:1px solid #6ee7b7;cursor:pointer;width:100%">🏥 Also search PubMed (medical literature)</button></div>` : '';
+  // AI tools panel — natural language query for all tools, PRIMO keyword for PRIMO AI
+  const primoKeyword = res.bool.replace(/[()"]/g,'').replace(/\b(AND|OR)\b/g,' ').replace(/\s+/g,' ').trim();
+  // AI tools get corrected natural language; PRIMO AI gets keywords only
+  const correctedQuery = res.corrected || msg;
+  area.innerHTML += buildAIToolsPanel(correctedQuery, primoKeyword) + pubmedBtn;
+
+  chatHist.push({role:'assistant', content:`Search: ${res.natural||res.explanation}. Boolean: ${res.bool}`});
+  logToAdmin(msg, 'search');
+  cm.scrollTop = cm.scrollHeight;
+}
+
+
+const MEDICAL_RE = /\b(medicine|medical|health|clinical|nursing|pharmacy|biomedical|anatomy|physiology|epidemiology|oncology|cardiology|neuroscience|genomics|pathology|surgery|mental.?health|nutrition|public.?health|disease|therapy|treatment|diagnosis|patient|drug|pharmaceutical|cancer|diabetes|heart|brain|immunology|microbiology|virology|pediatric|dental|ophthalmology|radiology)\b/i;
+
+// Create new message card and search a source
+function doSearchNew(sid, source) {
+  const sp = (window._sp||{})[sid];
+  if (!sp) return;
+  const cm = document.getElementById('chatMsgs');
+
+  const loadEl = document.createElement('div');loadEl.className='msg bot';loadEl.style.maxWidth='96%';
+  const lbl = {primo:'📚 PRIMO',pubmed:'🏥 PubMed',scholar:'🎓 Semantic Scholar'}[source]||source;
+  loadEl.innerHTML=`<div class="av">🔍</div><div class="scard"><div class="typing" style="padding:8px 0"><span></span><span></span><span></span></div><div style="font-size:.8rem;color:var(--mu)">Searching ${lbl}…</div><div id="primo-results-area"></div></div>`;
+  cm.appendChild(loadEl);cm.scrollTop=cm.scrollHeight;
+  doSearchSource(sid, source, loadEl);
+}
+
+// Execute search against a source using stored params
+async function doSearchSource(sid, source, loadEl) {
+  const sp = (window._sp||{})[sid];
+  if (!sp) return;
+  const area = loadEl.querySelector('#primo-results-area');
+  const maxR = parseInt(botConfig.max_results||'5');
+  try {
+    let data;
+    if (source === 'primo') {
+      data = await searchPRIMO(sp.q, {pr:sp.pr, oa:sp.oa, yf:sp.yf, yt:sp.yt, limit:maxR});
+    } else {
+      const queryForMCP = sp.orig || sp.q;
+      const r = await fetchWithRetry(RAG_URL+'/search', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({query:queryForMCP, source, limit:maxR, peer_reviewed:sp.pr, open_access:sp.oa, year_from:sp.yf, year_to:sp.yt})
+      });
+      document.getElementById('warm-msg')?.remove();
+      data = await r.json();
+    }
+
+    window._primoResults[sid] = data.results || [];
+    const srcLabel = data.source || source;
+    const cnt = data.results?.length || 0;
+    const tot = data.total || 0;
+
+    if (cnt > 0) {
+      let html = `<div style="font-size:.82rem;font-weight:700;color:var(--primary-color);margin:10px 0 6px">📄 ${srcLabel}: Top ${cnt} of ${tot.toLocaleString()} results</div>`;
+      html += data.results.map((r,i) => renderResultCard(r, i, sid)).join('');
+
+      // "View all" links based on source
+      if (source === 'primo' && sp.bool) {
+        html += `<div style="text-align:center;margin-top:10px;padding:10px;background:var(--bg);border-radius:10px;font-size:.82rem"><a href="${mkURL(sp.bool,'Everything','MyInst_and_CI',[])}" target="_blank" style="color:var(--primary-color);font-weight:700">View all ${tot.toLocaleString()} results in PRIMO →</a></div>`;
+      }
+      if (source === 'pubmed') {
+        // PubMed supports full Boolean — use sp.bool for precise search
+        const pubmedQ = sp.bool || sp.q;
+        html += `<div style="text-align:center;margin-top:8px;padding:10px;background:#d1fae5;border-radius:10px;font-size:.82rem"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(pubmedQ)}" target="_blank" style="color:#065f46;font-weight:700">View all ${tot.toLocaleString()} results in PubMed →</a></div>`;
+      }
+      if (source === 'scholar') {
+        html += `<div style="text-align:center;margin-top:8px;padding:10px;background:#e0e7ff;border-radius:10px;font-size:.82rem"><a href="https://www.semanticscholar.org/search?q=${encodeURIComponent(sp.orig||sp.q)}" target="_blank" style="color:#3730a3;font-weight:700">View all results in Semantic Scholar →</a></div>`;
+      }
+
+      area.innerHTML = html;
+    } else {
+      area.innerHTML = `<div style="font-size:.82rem;color:var(--mu);margin-top:8px">No results from ${srcLabel}. ${data.error||''}</div>`;
+    }
+  } catch(e) {
+    area.innerHTML = `<div style="font-size:.78rem;color:var(--mu);margin-top:8px">Error: ${e.message}</div>`;
+  }
+  loadEl.querySelector('.typing')?.remove();
+}
+
+// =================================================================
+// REGEX MATCHERS
+// =================================================================
+const DB_LIST=['sciencedirect','ieee','scopus','web of science','springer','nature journal','wiley','taylor francis','pubmed','embase','cinahl','clinicalkey','cochrane','uptodate','acm digital','scifinder','scival','jstor','proquest','emerald','knovel','ebsco','elsevier','arxiv','zendy','mdpi','asme','asce','astm','aiaa','aip','aps journal','medline','database','e-resource','eresource'];
+function isDBQuery(msg){const l=msg.toLowerCase();return DB_LIST.some(d=>l.includes(d));}
+
+// ── Search intent detection ──
+// Block: library service questions about articles/books (not searching for them on a topic)
+const LIBRARY_SERVICE_RE=/\b(order|request|borrow|access|subscribe|purchase|buy|download|obtain|get.*through|ill|interlibrary|how do i get|how can i get|how to get|can i get.*from|library.*get|get.*from.*library|available.*library|library.*have|do you have|does.*library|what.*library.*have|remotely|off.?campus|from home|access.*database)\b/i;
+
+// Trigger: user wants articles/books ON a specific topic
+const TOPIC_SEARCH_RE=/\b(find|search|look for|show me|get me|give me|locate|i need|i want|i'd like|i am looking for|looking for|can i get|can you find|recommend|suggest|fetch)\b.{0,60}(articles?|papers?|books?|journals?|research|studies|publications?|literature)\b.{0,30}\b(on|about|regarding|related to|concerning|for|of)\b\s+\w/i;
+const CONTENT_FIRST_RE=/^(articles?|papers?|books?|journals?|studies|publications?|research)\s+(on|about|regarding|related to|concerning)\s+\S/i;
+const SOME_ON_RE=/\b(some\s+)?(articles?|papers?|books?|research|studies)\s+(on|about|regarding|concerning)\s+\w/i;
+
+// Combined check: is this a topic search (not a library service question)?
+function isTopicSearch(msg) {
+  if (LIBRARY_SERVICE_RE.test(msg)) return false;
+  return TOPIC_SEARCH_RE.test(msg) || CONTENT_FIRST_RE.test(msg) || SOME_ON_RE.test(msg);
+}
+
+// =================================================================
+// GLOBAL STATE — restored (was accidentally deleted in refactor)
+// =================================================================
+let chatHist = [];
+let pendingLLMQuestion = null; // stores question waiting for LLM confirmation
+let serverYear = new Date().getFullYear();
+let botConfig = { max_results:'5', maintenance_mode:'false', maintenance_message:'', bot_personality:'', welcome_message:'' };
+
+fetch(RAG_URL+'/year').then(r=>r.json()).then(d=>{if(d.year)serverYear=d.year;}).catch(()=>{});
+
+async function loadConfig() {
+  try {
+    const r = await fetch(RAG_URL+'/config');
+    if(r.ok){ const d=await r.json(); if(d&&typeof d==='object') botConfig={...botConfig,...d}; }
+  } catch(e) { console.warn('Config load failed:',e.message); }
+}
+
+let GEN_SYS = `You are the ${LIBBEE_CONFIG.LIBRARY_NAME || 'Library'} AI Assistant. Answer factually in 3-5 sentences. Only if the topic is clearly academic, add ONE sentence offering to find library resources.`;
+let LIB_SYS = `You are the ${LIBBEE_CONFIG.LIBRARY_NAME || 'Library'} AI Assistant. Answer questions about library services, databases, borrowing, hours, and resources concisely (2-4 sentences). Include relevant URLs when helpful.`;
+
+function trimChatHist() { if(chatHist.length>20) chatHist=chatHist.slice(-20); }
+
+function logToAdmin(msg, intent, results) {
+  try {
+    // Field names must match worker.js D1 INSERT: question, tool, result_count, model
+    fetch(W+'/log',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+      question: (msg||'').substring(0,200),
+      tool: intent||'unknown',
+      result_count: results||0,
+      model: activeModel,
+      response_time: 0,
+      timestamp: new Date().toISOString()
+    })}).catch(()=>{});
+  } catch(e) {}
+}
+
+window.addEventListener('DOMContentLoaded', async () => {
+  // Apply config.js values to page
+  if (typeof LIBBEE_CONFIG !== 'undefined') {
+    // Title and branding
+    document.title = 'Ask ' + (LIBBEE_CONFIG.BOT_NAME || 'LibBee') + ' — ' + (LIBBEE_CONFIG.LIBRARY_NAME || 'Library') + ' AI';
+    // Primary colour
+    if (LIBBEE_CONFIG.PRIMARY_COLOR) {
+      document.documentElement.style.setProperty('--primary-color', LIBBEE_CONFIG.PRIMARY_COLOR);
+    }
+    if (LIBBEE_CONFIG.ACCENT_COLOR) {
+      document.documentElement.style.setProperty('--accent-color', LIBBEE_CONFIG.ACCENT_COLOR);
+    }
+    // Header text
+    const hdrTitle = document.querySelector('.hdr-title');
+    if (hdrTitle) hdrTitle.textContent = LIBBEE_CONFIG.BOT_NAME || 'LibBee';
+    const hdrSub = document.querySelector('.hdr-sub');
+    if (hdrSub) hdrSub.textContent = LIBBEE_CONFIG.LIBRARY_NAME + ' AI Assistant' || 'Library AI Assistant';
+  }
+
+  await loadConfig();
+
+  // Apply bot_personality to GEN_SYS if set in admin
+  if(botConfig.bot_personality) {
+    GEN_SYS = botConfig.bot_personality + '\nAnswer factually in 3-5 sentences. Only if the topic is academic, offer to find library resources.';
+  }
+
+  // Apply default model if set in admin
+  if(botConfig.default_model && (botConfig.default_model === 'claude' || botConfig.default_model === 'gpt')) {
+    switchModel(botConfig.default_model);
+  }
+
+  const cm=document.getElementById('chatMsgs');
+  if(cm && cm.children.length===0){
+    const bee = document.querySelector('.hdr-logo img')?.outerHTML || '';
+    // Use welcome_message from admin config if set, otherwise default
+    const welcomeText = botConfig.welcome_message ||
+      "Hello! I'm <strong>${LIBBEE_CONFIG.BOT_NAME || 'LibBee'}</strong> 🐝 — the ${LIBBEE_CONFIG.LIBRARY_NAME || 'Library'} AI Assistant!<br><br>I can help with finding books &amp; articles, library services, research support, and more. Just ask!";
+    cm.innerHTML=`<div class="msg bot"><div class="av" style="background:transparent">${bee}</div><div class="bub">${welcomeText}<br><br><span style="font-size:.75rem;color:var(--mu)">Switch between <strong style="color:#10A37F">ChatGPT</strong> and <strong style="color:#D97706">Claude</strong> above.</span></div></div>`;
+  }
+  const chips=document.getElementById('chips');
+  if(chips) chips.style.display='flex';
+});
+
+// Add "Find articles or books on this?" button after any answer
+function addFindResourcesBtn(msg) {
+  const safeTopic = msg.replace(/'/g, "\'").substring(0, 120);
+  return `<div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--br)">
+    <button onclick="chip('Find articles and books on ${safeTopic}')" 
+      style="padding:6px 12px;background:#f0f4ff;color:var(--primary-color);border:1.5px solid var(--primary-color);border-radius:20px;font-size:.74rem;font-weight:600;cursor:pointer;white-space:nowrap">
+      📚 Find articles &amp; books on this
+    </button>
+  </div>`;
+}
+
+
+// ── Status message helper — updates the text inside a loading bubble ──
+const STATUS_MESSAGES = {
+  thinking:   ['🔍 Searching library knowledge base…', '📚 Looking through library resources…', '🐝 LibBee is thinking…'],
+  rag:        ['📖 Checking library knowledge base…', '🔎 Searching library FAQ & guides…'],
+  llm:        ['💭 Generating answer…', '✍️ Writing response…', '🤖 Asking the AI…'],
+  search:     ['🔤 Correcting spelling…', '🔧 Building Boolean query…', '🔍 Searching PRIMO…'],
+  webSearch:  ['🌐 Searching the web…', '📡 Fetching latest information…'],
+};
+
+function setStatusText(tid, key, index=0) {
+  const el = document.getElementById(tid);
+  if (!el) return;
+  const msgs = STATUS_MESSAGES[key] || STATUS_MESSAGES.thinking;
+  const msg = msgs[index % msgs.length];
+  let st = el.querySelector('.status-text');
+  if (!st) {
+    st = document.createElement('span');
+    st.className = 'status-text';
+    const typing = el.querySelector('.typing');
+    if (typing) typing.appendChild(st);
+  }
+  st.textContent = msg;
+}
+
+function cycleStatus(tid, key, intervalMs=3000) {
+  let i = 0;
+  setStatusText(tid, key, i);
+  const timer = setInterval(() => {
+    if (!document.getElementById(tid)) { clearInterval(timer); return; }
+    i++;
+    setStatusText(tid, key, i);
+  }, intervalMs);
+  return timer; // call clearInterval(timer) when done
+}
+
+async function sendChat(){
+  const inp=document.getElementById('chatIn');const msg=inp.value.trim();if(!msg)return;
+  // Check maintenance mode
+  if (botConfig.maintenance_mode === 'true') {
+    addMsg('bot', `⚠️ ${botConfig.maintenance_message || 'The chatbot is currently under maintenance. Please try again later.'}`);
+    inp.value=''; return;
+  }
+  inp.value='';addMsg('user',msg);document.getElementById('chips').style.display='none';
+  const cm=document.getElementById('chatMsgs');
+  chatHist.push({role:'user',content:String(msg)});
+  trimChatHist(); // Fix 13: keep history bounded
+
+  // 0. Context check — if the bot just asked for a subject/topic,
+  //    treat this reply as a direct search query immediately
+  const lastBotMsg = chatHist.slice(0,-1).reverse().find(m => m.role === 'assistant')?.content || '';
+  const wasAskingForSubject = /AWAITING_SUBJECT|what subject|what topic|type your topic|i will search for articles and books/i.test(lastBotMsg);
+  if (wasAskingForSubject && msg.trim().length > 1) {
+    const cm0 = document.getElementById('chatMsgs');
+    await fullSearch(msg, chatHist, cm0);
+    return;
+  }
+
+  // 1. FAQ match (instant, free)
+  const faq = FAQ_KB.find(f => f.q.test(msg));
+  if (faq) { addBotStreamed(faq.a + ' ' + badge()); chatHist.push({role:'assistant',content:faq.a}); logToAdmin(msg,'faq',1); showFollowUps('library'); return; }
+
+  // 2. Database mention
+  if(isDBQuery(msg)){
+    addMsg('bot',`For all YOUR_LIBRARY_NAME databases: <a href="${ERESOURCES}" target="_blank"><strong>YOUR_LIBRARY_URL/eresources</strong></a> ${badge()}`);
+    chatHist.push({role:'assistant',content:'See eresources'}); logToAdmin(msg,'database',1); showFollowUps('library'); return;
+  }
+
+  // 3. Subject mapping
+  const subj = matchSubject(msg);
+  if (subj) {
+    const dbLinks = subj.databases.map(d => {
+      const db = dbs.find(x => x.name.includes(d.split(' ')[0]));
+      return db ? `<a href="${db.url}" target="_blank" style="color:var(--t)">${d}</a>` : d;
+    }).join(' · ');
+    addMsg('bot',`For <strong>${subj.subject}</strong>, I recommend these databases: ${dbLinks}<br><br>Browse all at <a href="${ERESOURCES}" target="_blank">YOUR_LIBRARY_URL/eresources</a> ${badge()}`);
+    chatHist.push({role:'assistant',content:`Recommended databases for ${subj.subject}`}); logToAdmin(msg,'subject_map',subj.databases.length); showFollowUps('search'); return;
+  }
+
+  // 4. Generic "find articles/books"
+  if (/^i?\s*(want to |would like to )?(find|search|look for|need)\s*(some\s+)?(articles?|papers?)\s*$/i.test(msg)) {
+    addMsg('bot',`What subject or topic would you like me to find articles on? ${badge()}<br><span style="font-size:.78rem;color:var(--mu)">e.g. <em>"AI in healthcare"</em>, <em>"renewable energy"</em></span>`);
+    chatHist.push({role:'assistant',content:'AWAITING_SUBJECT: What topic would you like to find articles on?'}); return;
+  }
+  if (/^i?\s*(want to |would like to )?(find|search|look for|need)\s*(some\s+)?(books?|ebooks?)\s*$/i.test(msg)) {
+    addMsg('bot',`What subject would you like me to find books on? ${badge()}<br><span style="font-size:.78rem;color:var(--mu)">e.g. <em>"data science"</em>, <em>"structural engineering"</em></span>`);
+    chatHist.push({role:'assistant',content:'AWAITING_SUBJECT: What subject would you like to find books on?'}); return;
+  }
+
+  // 4b. "Give me a general explanation of X" — answer directly, no clarification
+  const generalExplainMatch = msg.match(/(?:give me a |provide a )?general (?:explanation|overview|summary|info|information) (?:of |about |on )?(.+)/i);
+  if (generalExplainMatch) {
+    const topic = generalExplainMatch[1].replace(/[?.!]/g,'').trim();
+    const tid2 = 'ty'+Date.now();
+    const te2 = document.createElement('div'); te2.className='msg bot'; te2.id=tid2;
+    te2.innerHTML = `<div class="av" style="background:transparent"><img src="data:image/png;base64,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" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%"></div><div class="bub"><div class="typing"><span></span><span></span><span></span></div></div>`;
+    cm.appendChild(te2); cm.scrollTop=cm.scrollHeight;
+    try {
+      let reply, correctedQuery = msg;
+      try {
+        // Use agent — it adds RAG context and tool awareness
+        const agentResult = await callAgent(msg);
+        reply = agentResult.html;
+        correctedQuery = agentResult.correctedQuery || msg;
+      } catch(agentErr) {
+        if (agentErr.redirectToSearch) { document.getElementById(tid2)?.remove(); await fullSearch(agentErr.correctedQuery || msg, chatHist, cm); return; }
+        console.warn('Agent failed for explain, falling back:', agentErr.message);
+        if (activeModel === 'claude') {
+          try {
+            const ws = await callClaudeWebSearch(chatHist, GEN_SYS);
+            reply = fmt(ws.text);
+            if (ws.sources.length > 0) {
+              reply += '<div style="margin-top:8px;font-size:.74rem;color:var(--mu)"><strong>Web sources:</strong> ';
+              reply += ws.sources.slice(0, 4).map(s => `<a href="${s.url}" target="_blank" style="color:var(--t)">${s.title || s.url}</a>`).join(' · ');
+              reply += '</div>';
+            }
+            reply += ' ' + badge() + ' <span class="model-badge" style="background:#E6F1FB;color:#0C447C">Web</span>';
+          } catch(e) { reply = fmt(await callLLM({system:GEN_SYS, messages:chatHist, max_tokens:500})) + ' ' + badge(); }
+        } else {
+          reply = fmt(await callLLM({system:GEN_SYS, messages:chatHist, max_tokens:500})) + ' ' + badge();
+        }
+      }
+      document.getElementById(tid2)?.remove();
+      chatHist.push({role:'assistant', content:reply});
+      addBotStreamed(reply); logToAdmin(msg,'agent',1); showFollowUps('general', correctedQuery);
+    } catch(e) { document.getElementById(tid2)?.remove(); addMsg('bot','⚠️ '+e.message); }
+    return;
+  }
+
+  // 5. Typing indicator + route
+  const tid='ty'+Date.now();
+  const te=document.createElement('div');te.className='msg bot';te.id=tid;
+  te.innerHTML=`<div class="av" style="background:transparent"><img src="data:image/png;base64,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" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%"></div><div class="bub"><div class="typing"><span></span><span></span><span></span><span class="status-text">🐝 LibBee is thinking…</span></div></div>`;
+  cm.appendChild(te);cm.scrollTop=cm.scrollHeight;
+  const statusTimer = cycleStatus(tid, 'thinking', 2500);
+  let tid3 = null; // LLM fallback bubble id — defined upfront so catch can reference it
+
+  try{
+    // ── STEP 1: Explicit search? Only if user clearly wants articles/books ──
+    if(isTopicSearch(msg)){
+      clearInterval(statusTimer); document.getElementById(tid)?.remove();
+      await fullSearch(msg, chatHist, cm);
+      return;
+    }
+
+    // ── STEP 2: RAG first — always try library knowledge base ──
+    let answered = false;
+    try {
+      setStatusText(tid, 'rag');
+      const ragAnswer = await callRAG(msg);
+      clearInterval(statusTimer); document.getElementById(tid)?.remove();
+      // Append "find articles" button to RAG answer
+      const ragHtml = ragAnswer + addFindResourcesBtn(msg) + ' ' + badge() + ' <span class="model-badge" style="background:#E1F5EE;color:#0F6E56">Library KB</span>';
+      chatHist.push({role:'assistant', content:ragAnswer});
+      addBotStreamed(ragHtml);
+      logToAdmin(msg,'rag',1);
+      answered = true;
+    } catch(ragErr) {
+      console.warn('RAG unavailable or no answer:', ragErr.message);
+    }
+    if(answered) return;
+
+    // ── STEP 3: Not in library KB — ask user before using general LLM ──
+    clearInterval(statusTimer); document.getElementById(tid)?.remove();
+    pendingLLMQuestion = msg; // store for buttons to use
+    const btnId = 'kb-'+Date.now();
+    addMsg('bot', `I don't have specific information about this in the YOUR_LIBRARY_NAME knowledge base. ${badge()}<br><br>
+      <div id="${btnId}" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+        <button id="${btnId}-llm"
+          style="padding:8px 16px;background:var(--primary-color);color:#fff;border:none;border-radius:20px;font-size:.8rem;font-weight:600;cursor:pointer">
+          🤖 Yes, answer from general AI knowledge
+        </button>
+        <button id="${btnId}-search"
+          style="padding:8px 16px;background:#f0f4ff;color:var(--primary-color);border:1.5px solid var(--primary-color);border-radius:20px;font-size:.8rem;font-weight:600;cursor:pointer">
+          📚 Find articles &amp; books on this
+        </button>
+      </div>`);
+    // Attach event listeners after DOM insert (avoids string escaping issues)
+    setTimeout(() => {
+      document.getElementById(btnId+'-llm')?.addEventListener('click', () => {
+        document.getElementById(btnId).innerHTML = '<em style="font-size:.78rem;color:var(--mu)">Generating answer from general AI…</em>';
+        answerFromLLM(pendingLLMQuestion);
+      });
+      document.getElementById(btnId+'-search')?.addEventListener('click', () => {
+        document.getElementById(btnId).innerHTML = '<em style="font-size:.78rem;color:var(--mu)">Searching articles and books…</em>';
+        answerFindArticles(pendingLLMQuestion);
+      });
+    }, 100);
+    chatHist.push({role:'assistant', content:'Not in library KB. Asked user: use general AI or find articles?'});
+    logToAdmin(msg,'not_in_kb',0);
+
+  }catch(e){
+    clearInterval(statusTimer); document.getElementById(tid)?.remove(); document.getElementById(tid3)?.remove();
+    addMsg('bot',`⚠️ <strong>Error:</strong> ${e.message}`);
+  }
+}
+
+
+// =================================================================
+// SEARCH TAB
+// =================================================================
+async function doSearch(){
+  const q = document.getElementById('sIn').value.trim(); if(!q){alert('Enter a search term');return;}
+  const pr = document.getElementById('sPR').checked, oa = document.getElementById('sOA').checked;
+  const yf = document.getElementById('sYF').value.trim(), yt = document.getElementById('sYT').value.trim();
+  const maxR = parseInt(botConfig.max_results||'10');
+  document.getElementById('sResults').innerHTML = '';
+  document.getElementById('sStatus').innerHTML = '<span class="status-text" style="color:var(--mu);font-size:.8rem">✏️ Correcting spelling &amp; building Boolean query… please wait</span>';
+
+  const res = await executeSearch(q, {
+    pr, oa, yf, yt, limit: maxR,
+    onProgress: () => { document.getElementById('sStatus').innerHTML = '<span class="status-text" style="color:var(--mu);font-size:.8rem">🔍 Searching PRIMO catalogue… please wait</span>'; }
+  });
+
+  document.getElementById('sStatus').textContent = '';
+
+  const correctedQuery = res.corrected || q;
+  const primoKeyword = res.bool.replace(/[()"]/g,'').replace(/\b(AND|OR)\b/g,' ').replace(/\s+/g,' ').trim();
+
+  // If spelling was corrected — update the input box and show a notice
+  const wasSpellCorrected = correctedQuery && correctedQuery.toLowerCase().trim() !== q.toLowerCase().trim();
+  if (wasSpellCorrected) {
+    document.getElementById('sIn').value = correctedQuery;
+  }
+
+  let html = '';
+
+  // "Did you mean?" notice — only shown if correction was made
+  if (wasSpellCorrected) {
+    html += `<div style="padding:8px 12px;background:#fef9c3;border-left:3px solid #C8A951;border-radius:8px;font-size:.8rem;color:#713f12;margin-bottom:10px">
+      ✏️ <strong>Spelling corrected:</strong> Searching for "<em>${correctedQuery}</em>" instead of "<em>${q}</em>"
+    </div>`;
+  }
+
+  html += buildSearchCard(res.bool, res.explanation||'', correctedQuery, q, res.yf, res.yt, res.pr, res.oa, false);
+
+  if (res.results.length) {
+    html += `<div style="font-size:.84rem;font-weight:700;color:var(--primary-color);margin:12px 0 6px">📄 ${res.total.toLocaleString()} results — showing top ${res.results.length}:</div>`;
+    html += res.results.map((r,i) => renderResultCard(r, i, res.sid)).join('');
+  } else {
+    html += `<div style="font-size:.78rem;color:var(--mu);margin-top:8px">${res.error ? 'PRIMO API: '+res.error : 'No results found.'}</div>`;
+  }
+
+  // AI tools get corrected natural language; PRIMO AI gets primoKeyword; PubMed gets full Boolean
+  html += buildAIToolsPanel(correctedQuery, primoKeyword);
+  if (res.isMedical) {
+    // PubMed supports full Boolean syntax — pass res.bool directly
+    html += `<div style="margin-top:8px"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(res.bool)}" target="_blank" style="display:block;padding:8px 14px;background:#d1fae5;color:#065f46;border-radius:8px;text-decoration:none;font-weight:700;font-size:.8rem;text-align:center">🏥 Also search PubMed (medical literature) →</a></div>`;
+  }
+  document.getElementById('sResults').innerHTML = html;
+}
+
+
+// =================================================================
+// HELPERS
+// =================================================================
+function addMsg(role,html){
+  if(!html?.trim())return;const cm=document.getElementById('chatMsgs');
+  const el=document.createElement('div');el.className=`msg ${role}`;
+  el.innerHTML=`<div class="av">${role==='bot'?`<img src="data:image/png;base64,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" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%">`:'👤'}</div><div class="bub">${html}</div>`;
+  cm.appendChild(el);cm.scrollTop=9999;
+}
+// Stream text character by character into a bubble element
+async function streamText(el, html, delayMs=8) {
+  // For HTML content, just set it directly (streaming char-by-char breaks HTML tags)
+  el.innerHTML = html;
+}
+
+// Clear chat history and reset UI
+function clearChat() {
+  const cm = document.getElementById('chatMsgs');
+  chatHist = [];
+  // Rebuild welcome message
+  const bee = `<img src="${document.querySelector('.hdr-logo img')?.src||''}" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%">`;
+  cm.innerHTML = `<div class="msg bot"><div class="av" style="background:transparent">${bee}</div><div class="bub">Hello! I'm <strong>${LIBBEE_CONFIG.BOT_NAME || 'LibBee'}</strong> 🐝 — the ${LIBBEE_CONFIG.LIBRARY_NAME || 'Library'} AI Assistant!<br><br>I can help with finding books &amp; articles, library services, research support, and more. Just ask!<br><br><span style="font-size:.75rem;color:var(--mu)">Switch between <strong style="color:#10A37F">ChatGPT</strong> and <strong style="color:#D97706">Claude</strong> above.</span></div></div>`;
+  document.getElementById('chips').style.display = 'flex';
+  document.getElementById('chatIn').value = '';
+  document.getElementById('chatIn').focus();
+}
+
+async function addBotStreamed(html) {
+  const cm=document.getElementById('chatMsgs');
+  const el=document.createElement('div');el.className='msg bot';
+  const bubEl=document.createElement('div');bubEl.className='bub';
+  el.innerHTML='<div class="av" style="background:transparent"><img src="data:image/png;base64,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" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%"></div>';el.appendChild(bubEl);
+  cm.appendChild(el);cm.scrollTop=9999;
+  await streamText(bubEl, html, 10);
+  cm.scrollTop=9999;
+}
+function fmt(t){return t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\*(.*?)\*/g,'<em>$1</em>').replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank">$1</a>').replace(/\n/g,'<br>');}
+function chip(t){document.getElementById('chatIn').value=t;sendChat();}
+
+// Handler: user confirmed — answer from general LLM knowledge
+async function answerFromLLM(msg) {
+  const cm = document.getElementById('chatMsgs');
+  chatHist.push({role:'user', content:'Yes, answer from general knowledge'});
+
+  const tid4 = 'ty4'+Date.now();
+  const te4 = document.createElement('div'); te4.className='msg bot'; te4.id=tid4;
+  const beeImg = document.querySelector('.hdr-logo img')?.src || document.querySelector('.av img')?.src || '';
+  te4.innerHTML = `<div class="av" style="background:transparent"><img src="${beeImg}" alt="LibBee" style="width:28px;height:28px;object-fit:contain;border-radius:50%"></div><div class="bub"><div class="typing"><span></span><span></span><span></span><span class="status-text">💭 Generating answer from general knowledge…</span></div></div>`;
+  cm.appendChild(te4); cm.scrollTop=cm.scrollHeight;
+
+  try {
+    let reply = '';
+    if (activeModel === 'claude') {
+      // Claude: use web search for up-to-date answers
+      try {
+        const ws = await callClaudeWebSearch(chatHist, GEN_SYS);
+        reply = fmt(ws.text);
+        if (ws.sources && ws.sources.length > 0) {
+          reply += '<div style="margin-top:8px;font-size:.74rem;color:var(--mu)"><strong>Web sources:</strong> ';
+          reply += ws.sources.slice(0,4).map(s=>`<a href="${s.url}" target="_blank" style="color:var(--t)">${s.title||s.url}</a>`).join(' · ');
+          reply += '</div>';
+        }
+        reply += ' ' + badge() + ' <span class="model-badge" style="background:#E6F1FB;color:#0C447C">Web</span>';
+      } catch(e) {
+        reply = fmt(await callLLM({system:GEN_SYS, messages:chatHist, max_tokens:500})) + ' ' + badge();
+      }
+    } else {
+      // GPT: use HF Space /general (OpenAI Responses API with web search)
+      try {
+        const r = await fetchWithRetry(RAG_URL + '/general', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({question: msg, history: chatHist.slice(-6), model: 'gpt'})
+        });
+        if (r && r.ok) {
+          const d = await r.json();
+          if (d.answer) {
+            reply = fmt(d.answer) + ' ' + badge();
+            // Show web sources if returned
+            if (d.sources && d.sources.length > 0) {
+              reply += '<div style="margin-top:8px;font-size:.74rem;color:var(--mu)"><strong>Web sources:</strong> ';
+              reply += d.sources.slice(0,4).map(s=>`<a href="${s.url}" target="_blank" style="color:var(--t)">${s.title||s.url}</a>`).join(' · ');
+              reply += '</div>';
+            }
+            if (d.model === 'gpt-4o-mini-web') {
+              reply += ' <span class="model-badge" style="background:#E6F1FB;color:#0C447C">Web</span>';
+            }
+          } else { throw new Error('no answer'); }
+        } else { throw new Error('HF general failed'); }
+      } catch(e) {
+        // Fallback to Cloudflare Worker if HF also fails
+        reply = fmt(await callLLM({system:GEN_SYS, messages:chatHist, max_tokens:500})) + ' ' + badge();
+      }
+    }
+    reply += addFindResourcesBtn(msg);
+    document.getElementById(tid4)?.remove();
+    chatHist.push({role:'assistant', content:reply});
+    addBotStreamed(reply);
+    logToAdmin(msg, 'llm_general_confirmed', 1);
+  } catch(e) {
+    document.getElementById(tid4)?.remove();
+    addMsg('bot', '⚠️ ' + e.message);
+  }
+}
+
+// Handler: user wants articles/books instead of general answer
+function answerFindArticles(msg) {
+  chatHist.push({role:'user', content:'Find articles and books on this topic'});
+  const cm = document.getElementById('chatMsgs');
+  fullSearch(msg, chatHist, cm);
+}
+
+// "Find Articles & Books" chip — ask for subject first instead of immediately searching
+function askForSubject(){
+  document.getElementById('chips').style.display='none';
+  addMsg('user','📚 Find Articles & Books');
+  addMsg('bot',`What subject or topic are you looking for? ${badge()}<br><span style="font-size:.78rem;color:var(--mu)">e.g. <em>"machine learning in healthcare"</em>, <em>"renewable energy YOUR_COUNTRY"</em>, <em>"structural engineering"</em></span>`);
+  chatHist.push({role:'assistant', content:'AWAITING_SUBJECT: What subject or topic are you looking for? Type your topic and I will search for articles and books.'});
+  document.getElementById('chatIn').focus();
+}
+function showFollowUps(intent, originalMsg){
+  const cm = document.getElementById('chatMsgs');
+  const qs = intent==='search'
+    ? ['Make it peer reviewed','Limit to 2020 onwards','Find books instead']
+    : intent==='library'
+    ? ['How do I access databases?','What are the library hours?','Reserve a room']
+    : ['What are the library hours?','How do I reserve a study room?'];
+  const d = document.createElement('div'); d.className='followups';
+  d.innerHTML = qs.map(q=>`<button class="fq" onclick="chip('${q}')">${q}</button>`).join('');
+  cm.appendChild(d);
+
+  // For general answers — show search recovery banner
+  if (intent === 'general' && originalMsg) {
+    showSearchRecovery(originalMsg, cm);
+  }
+  cm.scrollTop = 9999;
+}
+
+// Search recovery banner — appears after general answers
+// Lets user trigger a library search with one click from the topic in their message
+function showSearchRecovery(originalMsg, cm) {
+  // originalMsg here is already the corrected query (from agent corrected_query)
+  // for fallback paths it may still be raw — either way directSearch → buildBoolean will correct it
+  const displayMsg = originalMsg.length > 60 ? originalMsg.substring(0, 57) + '…' : originalMsg;
+  const escapedMsg = originalMsg.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+
+  const recovery = document.createElement('div');
+  recovery.className = 'search-recovery';
+  recovery.innerHTML = `
+    <span class="search-recovery-text">📚 Want academic sources on <em>"${displayMsg}"</em>?</span>
+    <button class="search-recovery-btn" onclick="directSearch('${escapedMsg}')">
+      🔍 Search Library Resources
+    </button>`;
+  cm.appendChild(recovery);
+}
+
+// directSearch — bypasses routeQuery entirely, goes straight to fullSearch
+// Used by recovery banner so misspelled queries don't get misrouted
+// buildBoolean inside executeSearch will correct spelling automatically
+async function directSearch(msg) {
+  const inp = document.getElementById('chatIn');
+  const cm  = document.getElementById('chatMsgs');
+  // Show user message bubble
+  addMsg('user', msg);
+  chatHist.push({role:'user', content:String(msg)});
+  trimChatHist();
+  document.getElementById('chips').style.display = 'none';
+  // Go straight to fullSearch — no routing step
+  await fullSearch(msg, chatHist, cm);
+  logToAdmin(msg, 'search_recovery');
+}
+
+// =================================================================
+// E-RESOURCES (same as before)
+// =================================================================
+const dbs=[
+{l:'A',name:'Academic Search Ultimate',desc:'10,000+ academic journals.',url:'https://khalifa.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=asn'},
+{l:'A',name:'ACM Digital Library',desc:'ACM publications — journals, proceedings, books.',url:'https://khalifa.idm.oclc.org/login?url=http://dl.acm.org'},
+{l:'A',name:'ACS',desc:'ACS journals in chemistry and related fields.',url:'https://khalifa.idm.oclc.org/login?url=https://pubs.acs.org'},
+{l:'A',name:'AIAA',desc:'Aerospace science journals.',url:'https://khalifa.idm.oclc.org/login?url=https://arc.aiaa.org/'},
+{l:'A',name:'AIP',desc:'Physics journals — Applied Physics Letters, etc.',url:'https://khalifa.idm.oclc.org/login?url=https://aip.scitation.org'},
+{l:'A',name:'Al Manhal',desc:'Arabic scholarly publications.',url:'https://khalifa.idm.oclc.org/login?url=https://platform.almanhal.com'},
+{l:'A',name:'Applied Science & Technology Source',desc:'Applied sciences and computing.',url:'https://khalifa.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=aps'},
+{l:'A',name:'APS Journals',desc:'American Physical Society journals.',url:'https://khalifa.idm.oclc.org/login?url=https://journals.aps.org'},
+{l:'A',name:'arXiv.org',desc:'Open access — physics, math, CS.',url:'https://arxiv.org/'},
+{l:'A',name:'ASCE Library',desc:'Civil and structural engineering.',url:'https://khalifa.idm.oclc.org/login?url=https://ascelibrary.org'},
+{l:'A',name:'ASME Digital Library',desc:'Mechanical engineering journals.',url:'https://khalifa.idm.oclc.org/login?url=https://asmedigitalcollection.asme.org'},
+{l:'A',name:'ASTM Compass',desc:'Engineering standards.',url:'https://khalifa.idm.oclc.org/login?url=https://secure.astm.org/login'},
+{l:'C',name:'CINAHL Ultimate',desc:'Nursing and allied health.',url:'https://khalifa.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=cul'},
+{l:'C',name:'ClinicalKey Student',desc:'Medical texts and guidelines.',url:'https://khalifa.idm.oclc.org/login?url=https://www.clinicalkey.com/student/login'},
+{l:'C',name:'Cochrane Library',desc:'Systematic reviews in healthcare.',url:'https://khalifa.idm.oclc.org/login?url=https://www.cochranelibrary.com'},
+{l:'E',name:'Ebook Central',desc:'Academic eBooks.',url:'https://khalifa.idm.oclc.org/login?url=https://ebookcentral.proquest.com/lib/khalifa'},
+{l:'E',name:'Embase',desc:'Biomedical literature.',url:'https://khalifa.idm.oclc.org/login?url=https://www.embase.com'},
+{l:'E',name:'Emerald Insight',desc:'Management and business journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.emerald.com/insight'},
+{l:'I',name:'IEEE Xplore',desc:'IEEE/IET journals and standards.',url:'https://khalifa.idm.oclc.org/login?url=https://ieeexplore.ieee.org/Xplore/dynhome.jsp'},
+{l:'I',name:'IOPScience',desc:'Physics journals.',url:'https://khalifa.idm.oclc.org/login?url=https://iopscience.iop.org'},
+{l:'J',name:'JSTOR',desc:'Archival journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.jstor.org'},
+{l:'K',name:'Knovel',desc:'Engineering reference books.',url:'https://khalifa.idm.oclc.org/login?url=https://app.knovel.com/kn'},
+{l:'M',name:'MathSciNet',desc:'Mathematical sciences.',url:'https://khalifa.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=msn'},
+{l:'N',name:'Nature Journals',desc:'Nature-branded journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.nature.com/index.html'},
+{l:'O',name:'OnePetro',desc:'Oil and gas literature.',url:'https://khalifa.idm.oclc.org/login?url=https://www.onepetro.org/'},
+{l:'O',name:'Optica Publishing',desc:'Optics and photonics.',url:'https://khalifa.idm.oclc.org/login?url=https://opg.optica.org/default.cfm'},
+{l:'P',name:'ProQuest',desc:'19,000+ periodicals.',url:'https://khalifa.idm.oclc.org/login?url=https://search.proquest.com/?accountid=174135'},
+{l:'P',name:'PubMed @ KU',desc:'Biomedical citations.',url:'https://www.ncbi.nlm.nih.gov/pubmed/?otool=iaekustlib'},
+{l:'R',name:'RSC Journals',desc:'Royal Society of Chemistry.',url:'https://khalifa.idm.oclc.org/login?url=https://pubs.rsc.org/'},
+{l:'S',name:'ScienceDirect',desc:'Elsevier journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.sciencedirect.com'},
+{l:'S',name:'SciFindern',desc:'Chemistry research.',url:'https://khalifa.idm.oclc.org/login?url=https://scifinder-n.cas.org'},
+{l:'S',name:'SciVal',desc:'Research performance analytics.',url:'https://khalifa.idm.oclc.org/login?url=https://scival.com/'},
+{l:'S',name:'Scopus',desc:'20,000+ journals index.',url:'https://khalifa.idm.oclc.org/login?url=https://www.scopus.com/home.url'},
+{l:'S',name:'Springer',desc:'Books and journals.',url:'https://khalifa.idm.oclc.org/login?url=https://link.springer.com'},
+{l:'T',name:'Taylor & Francis',desc:'Science and humanities journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.tandfonline.com/'},
+{l:'U',name:'UpToDate',desc:'Clinical decision support.',url:'https://khalifa.idm.oclc.org/login?url=https://www.uptodate.com/'},
+{l:'W',name:'Web of Science',desc:'11,000+ journals.',url:'https://khalifa.idm.oclc.org/login?url=https://www.webofscience.com'},
+{l:'W',name:'Wiley Online Library',desc:'Multidisciplinary collection.',url:'https://khalifa.idm.oclc.org/login?url=https://onlinelibrary.wiley.com'},
+{l:'Z',name:'Zendy',desc:'AI-powered research library.',url:'https://zendy.io/'}
+];
+function buildDB(f){
+  const letters=[...new Set(dbs.map(d=>d.l))].sort();
+  document.getElementById('abar').innerHTML=`<button class="abtn ${!f?'active':''}" onclick="buildDB('')">All</button>`+letters.map(l=>`<button class="abtn ${f===l?'active':''}" onclick="buildDB('${l}')">${l}</button>`).join('');
+  const filtered=f?dbs.filter(d=>d.l===f):dbs;const g={};
+  filtered.forEach(d=>{if(!g[d.l])g[d.l]=[];g[d.l].push(d);});
+  document.getElementById('dbList').innerHTML=Object.keys(g).sort().map(l=>`<div class="dg"><h2>${l}</h2>${g[l].map(d=>`<div class="di"><h4>${d.name}</h4><p>${d.desc}</p><a href="${d.url}" target="_blank">Access →</a></div>`).join('')}</div>`).join('');
+}
+buildDB('');
+</script>
+</body>
+</html>
