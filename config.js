@@ -12,8 +12,8 @@ const LIBBEE_CONFIG = {
   // ── Library Identity ──
   LIBRARY_NAME:  'Your Library Name',
   BOT_NAME:      'LibBee',
-  BOT_TAGLINE:   'Your Library AI Assistant',
-  UNIVERSITY:    'Your University Name',
+  BOT_TAGLINE:   'Calicut University Library AI Assistant',
+  UNIVERSITY:    'University of Calicut',
 
   // ── Library Website URLs ──
   LIBRARY_URL:   'https://library.youruniversity.edu',
@@ -30,9 +30,9 @@ const LIBBEE_CONFIG = {
   PRIMO_AI_URL:  '',
 
   // ── Koha catalog (leave blank if not using Koha) ──
-  KOHA_URL:      '',
+  KOHA_URL: https://catalog.uoc.ac.in/'',
 
   // ── Institutional Repository ──
-  REPOSITORY_URL: '',
+  REPOSITORY_URL:https://scholar.uoc.ac.in/home '',
 
 };
