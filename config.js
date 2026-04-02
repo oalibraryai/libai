@@ -10,7 +10,7 @@ const LIBBEE_CONFIG = {
   HF_SPACE_URL:  'https://libraryai-libai.hf.space',
 
   // ── Library Identity ──
-  LIBRARY_NAME:  'Your Library Name',
+  LIBRARY_NAME:  'Calicut University Library',
   BOT_NAME:      'LibBee',
   BOT_TAGLINE:   'Calicut University Library AI Assistant',
   UNIVERSITY:    'University of Calicut',
