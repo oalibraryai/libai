@@ -5,9 +5,9 @@
 
 const LIBBEE_CONFIG = {
 
-  // ── Infrastructure URLs (set after deploying HF Space and Cloudflare Worker) ──
-  WORKER_URL:    'https://YOUR-WORKER.workers.dev',      // Cloudflare Worker URL
-  HF_SPACE_URL:  'https://YOUR-USERNAME-libbee.hf.space', // Hugging Face Space URL
+  // ── Infrastructure URLs ──
+  WORKER_URL:    'https://curly-shape-865c.oalibraryai.workers.dev',
+  HF_SPACE_URL:  'https://libraryai-libai.hf.space',
 
   // ── Library Identity ──
   LIBRARY_NAME:  'Your Library Name',
@@ -21,18 +21,18 @@ const LIBBEE_CONFIG = {
   ERESOURCES_URL:'https://library.youruniversity.edu/eresources',
 
   // ── Branding ──
-  PRIMARY_COLOR: '#003366',   // Main colour (header, buttons)
-  ACCENT_COLOR:  '#C8922A',   // Accent colour
+  PRIMARY_COLOR: '#003366',
+  ACCENT_COLOR:  '#C8922A',
 
-  // ── Library Catalog (PRIMO) — leave blank if not using PRIMO ──
-  PRIMO_VID:     '',          // e.g. 'YOUR_VID_HERE'
-  PRIMO_BASE:    '',          // e.g. 'https://yourlib.primo.exlibrisgroup.com/discovery/search'
-  PRIMO_AI_URL:  '',          // e.g. 'https://yourlib.primo.exlibrisgroup.com/discovery/researchAssistant?...'
+  // ── PRIMO catalog (leave blank if not using PRIMO) ──
+  PRIMO_VID:     '',
+  PRIMO_BASE:    '',
+  PRIMO_AI_URL:  '',
 
-  // ── Koha Catalog — leave blank if not using Koha ──
-  KOHA_URL:      '',          // e.g. 'https://koha.yourlibrary.org'
+  // ── Koha catalog (leave blank if not using Koha) ──
+  KOHA_URL:      '',
 
-  // ── Institutional Repository — leave blank if none ──
-  REPOSITORY_URL: '',         // e.g. 'https://repository.youruniversity.edu'
+  // ── Institutional Repository ──
+  REPOSITORY_URL: '',
 
 };
